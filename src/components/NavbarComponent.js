@@ -20,13 +20,13 @@ const NavbarComponent = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#services/petSalon">Pet Salon</NavDropdown.Item>
-              <NavDropdown.Item href="#services/petHotel">Pet Hotel</NavDropdown.Item>
-              <NavDropdown.Item href="#services/petShop">Pet Shop</NavDropdown.Item>
-              <NavDropdown.Item href="#services/petAdoption">Pet Adoption</NavDropdown.Item>
+              <NavDropdown.Item href="#services/catSalon">Cat Salon</NavDropdown.Item>
+              <NavDropdown.Item href="#services/catHotel">Cat Hotel</NavDropdown.Item>
+              <NavDropdown.Item href="#services/catShop">Cat Shop</NavDropdown.Item>
+              <NavDropdown.Item href="#services/catAdoption">Cat Adoption</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Facilities" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#facilities/cafe">Café</NavDropdown.Item>
+              <NavDropdown.Item href="#facilities/cafe">Cafe</NavDropdown.Item>
               <NavDropdown.Item href="#facilities/catPlayground">Cat Playground</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#aboutUs">About Us</Nav.Link>
