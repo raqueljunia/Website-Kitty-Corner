@@ -1,10 +1,11 @@
 import React from 'react';
-import {Nav, Navbar, NavDropdown, Form, Button, FormControl} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown, Form, Button, Container} from 'react-bootstrap';
 import logo from '../assets/img/logo.png';
 
 const NavbarComponent = () => {
   return (
-      <Navbar bg="light" expand="lg">
+      <Navbar variant="dark" expand="lg">
+        <Container>
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -18,25 +19,24 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href='/home'>Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#services/catSalon">Cat Salon</NavDropdown.Item>
-              <NavDropdown.Item href="#services/catHotel">Cat Hotel</NavDropdown.Item>
-              <NavDropdown.Item href="#services/catShop">Cat Shop</NavDropdown.Item>
-              <NavDropdown.Item href="#services/catAdoption">Cat Adoption</NavDropdown.Item>
+              <NavDropdown.Item href='/services/catSalon'>Cat Salon</NavDropdown.Item>
+              <NavDropdown.Item href='/services/catHotel'>Cat Hotel</NavDropdown.Item>
+              <NavDropdown.Item href='/services/catShop'>Cat Shop</NavDropdown.Item>
+              <NavDropdown.Item href='/services/catAdoption'>Cat Adoption</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Facilities" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#facilities/cafe">Cafe</NavDropdown.Item>
-              <NavDropdown.Item href="#facilities/catPlayground">Cat Playground</NavDropdown.Item>
+              <NavDropdown.Item href='/facilities/cafe'>Cafe</NavDropdown.Item>
+              <NavDropdown.Item href='/facilities/catPlayground'>Cat Playground</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#aboutUs">About Us</Nav.Link>
+            <Nav.Link href='/aboutUs'>About Us</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            {/*<FormControl type="text" placeholder="Search" className="me-2" 
-            aria-label="Search"/>*/}
             <Button variant="outline-success">Sign In</Button>
           </Form>
         </Navbar.Collapse>
+        </Container>
     </Navbar>
   );
 }
