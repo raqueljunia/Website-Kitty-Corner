@@ -1,4 +1,5 @@
 import React from 'react';
+import FacilitiesSection from '../components/FacilitiesSection';
 
 const About = () => {
   return (

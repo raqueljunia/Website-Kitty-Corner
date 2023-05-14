@@ -11,13 +11,35 @@ const NavbarComponent = () => {
     img.src = logo;
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll, { passive: true });
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  const navbarClasses = `navbar ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`;  
+
   return (
-      <Navbar variant="dark" expand="lg">
-        <Container>
-        <Navbar.Brand href="#home">
+    <Navbar fixed="top" className={navbarClasses} variant="dark" expand="lg" sticky="top">
+
+      <Container>
+        <Navbar.Brand href="/">
           {logoLoaded && (
             <img
-              src={logo}
+          src={logo}
               height="40"
               className="d-inline-block align-center"
               alt="Kitty Corner logo"
@@ -29,7 +51,7 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href='/home'>Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="/services/catSalon">Cat Salon</NavDropdown.Item>
               <NavDropdown.Item href="/services/catHotel">Cat Hotel</NavDropdown.Item>
@@ -46,7 +68,7 @@ const NavbarComponent = () => {
             <Button variant="outline-success">Sign In</Button>
           </Form>
         </Navbar.Collapse>
-        </Container>
+      </Container>
     </Navbar>
   );
 }

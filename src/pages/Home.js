@@ -4,6 +4,7 @@ import HeroMain from '../components/HeroMain';
 import ServicesSection from '../components/ServicesSection';
 import FacilitiesSection from '../components/FacilitiesSection';
 import ReviewsSection from '../components/ReviewsSection';
+import GMap from '../components/GMap';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
     <ServicesSection />
     <FacilitiesSection />
     <ReviewsSection />
+    <GMap />
     </div>
   );
 }

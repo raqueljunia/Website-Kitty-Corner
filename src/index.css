@@ -1,3 +1,5 @@
+/* Navbar */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,28 @@
 }
 
 .navbar {
-  background-color: rgb(0,95,97);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+  transition: background-color 0.5s ease-out;
 }
+
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgb(0, 95, 97) !important;
+}
+
+/* Home */
 
 .main {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 video {
@@ -32,7 +50,6 @@ video {
   color: white;
 }
 
-/*
 .overlay {
   position: absolute;
   top: 0;
@@ -41,4 +58,40 @@ video {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 } 
-*/
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.btn-custom-1 {
+  width: 150px;
+  height: 53px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 36px;
+  border: 4px solid rgba(35, 158, 160, 1);
+  color: rgb(26, 117, 118);
+}
+
+.btn-custom-1:hover {
+  background-color: rgba(35, 158, 160, 1);
+  border: 4px solid rgb(26, 117, 118);
+}
+
+.btn-custom-2 {
+  width: 150px;
+  height: 53px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 36px;
+  border: 4px solid rgb(227, 157, 51);
+}
+
+.btn-custom-2:hover {
+  background-color: rgba(250, 171, 53, 1);
+  border: 4px solid rgb(196, 135, 43);
+}
