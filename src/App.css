@@ -1,0 +1,50 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/font/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/font/Montserrat-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('./assets/font/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Outift;
+    src: url('./assets/font/Outfit-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Outift;
+    src: url('./assets/font/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+/*Default CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Outfit' !important;
+}

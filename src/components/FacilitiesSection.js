@@ -7,9 +7,9 @@ const FacilitiesSection = () => {
     <div
       style={{
         backgroundImage: `url(${bgFacilities})`,
-        height: '100vh',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        paddingBottom: 100
       }}
     >
       <div className="bg-facilities">
