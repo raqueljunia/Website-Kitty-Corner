@@ -15,7 +15,7 @@ const CatHotel = () => {
       </div>
       <div className="additional-content">
         <div className="text-content">
-          <h2 className="welcome-text">Welcome to Pet Hotel by Kitty Corner!</h2>
+          <h2 className="welcome-text">Welcome to Cat Hotel by Kitty Corner!</h2>
           <p className="description-text">
             We are a high-quality pet hotel that offers comfortable and safe care for your beloved cats.
           </p>

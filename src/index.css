@@ -104,6 +104,7 @@ video {
   position: relative;
   text-align: center;
   overflow: hidden;
+  opacity: ;
 }
 
 .cat-hotel-image img {
@@ -125,21 +126,30 @@ video {
 
 .additional-content {
   display: flex;
+  align-items: center; /* Menyamakan tinggi tulisan dan gambar */
 }
 
 .text-content {
   flex: 7;
   padding: 20px;
-  background-color: brown;
+  background-color: #8b4513; /* Coklat tua */
   color: white;
 }
 
 .additional-image {
   flex: 3;
-  object-fit: cover;
-  width: 100%;
-  padding-top: 133.33%; /* Rasio 3:4 */
+  padding: 20px;
+  background-color: #d2b48c; /* Coklat agak muda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.additional-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 .welcome-text {
   color: white;
