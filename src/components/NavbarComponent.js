@@ -11,6 +11,8 @@ const NavbarComponent = () => {
     img.src = logo;
   }, []);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -27,8 +29,6 @@ const NavbarComponent = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
-  const [isScrolled, setIsScrolled] = useState(false);
   
   const navbarClasses = `navbar ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`;  
 
@@ -65,7 +65,7 @@ const NavbarComponent = () => {
             <Nav.Link href="/aboutUs">About Us</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button variant="outline-success">Sign In</Button>
+            <Button className="signup" onClick={() => console.log('connect')}>Sign In</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
