@@ -1,0 +1,34 @@
+.pricelist-section{
+    width: 100%;
+height: 698px;
+left: calc(50% - 1440px/2);
+top: 1538px;
+
+background: #FFBB55;
+}
+
+.pricelist-header{
+    position: relative;
+height: 40px;
+top: 5%;
+
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+/* identical to box height, or 40px */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #008083;
+}
+
+.pricelist-table{
+    position: relative;
+width: 75%;
+left:15%;
+top: 10%;
+
+background: #008083;
+}

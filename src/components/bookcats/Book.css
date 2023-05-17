@@ -1,0 +1,40 @@
+/* Membuat book-section menerapkan styling lebar sebesar 100% , tingi sebesar 698px dan posisi di atas  sebesar 2934px */
+
+.book-section{
+width: 100%;
+height: 698px;
+top: 2934px;
+
+background: url(../../assets/img/bgSalon.png);
+}
+
+.book-title{
+    position: relative;
+width: 700px;
+left: calc(50% - 700px/2);
+top: 20%;
+
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 100%;
+/* or 70px */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.book-cta{
+    position: relative;
+width: 223.03px;
+height: 81px;
+left: calc(50% - 223.03px/2 - 0.49px);
+top: 25%;
+
+background: rgba(247, 129, 5, 0.8);
+border-radius: 15px;
+}
