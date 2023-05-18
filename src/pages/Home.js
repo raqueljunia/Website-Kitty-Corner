@@ -9,13 +9,13 @@ import GMap from "../components/GMap";
 const Home = () => {
   return (
     <div>
-      <Header />
-      <HeroMain />
-      <ServicesSection />
-      <FacilitiesSection />
-      <ReviewsSection />
-      <GMap />
-    </div>
+    <Header />
+    <HeroMain />
+    <ServicesSection />
+    <FacilitiesSection />
+    <ReviewsSection />
+    <GMap />
+  </div>
   );
 };
 
