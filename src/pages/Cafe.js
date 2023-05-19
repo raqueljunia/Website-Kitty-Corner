@@ -2,9 +2,9 @@ import React from 'react';
 
 const Cafe = () => {
   return (
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3 ">
+    <div class="container my-5">
+        <div class="row mt-5">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-barry-shake">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -23,7 +23,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-caramel-shake">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -42,7 +42,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-oreo-shake">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -61,7 +61,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-macha-shake">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -80,7 +80,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-kwetiaw">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -99,7 +99,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-omlet">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -118,7 +118,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-cheese-cake">
                     <div class="overlay">
                         <div class = "items"></div>
@@ -137,7 +137,7 @@ const Cafe = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card-product card-product--menu-manggo-puding">
                     <div class="overlay">
                         <div class = "items"></div>
