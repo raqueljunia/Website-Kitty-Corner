@@ -1,8 +1,12 @@
 import React from 'react';
+import GMap, { CafeMenu } from "../components/CafeMenu";
 
 const Cafe = () => {
   return (
-    <div class="container">
+    <div>
+      <h1>Cafe</h1>
+      <p>Cafe page.</p>
+    <div class="container"/>
         <div class="row">
             <div class="col-sm-6 col-md-3 ">
                 <div class="card-product card-product--menu-barry-shake">
@@ -157,8 +161,8 @@ const Cafe = () => {
                 </div>
             </div>
         </div>
+        <CafeMenu />
     </div>
-
   );
 }
 
