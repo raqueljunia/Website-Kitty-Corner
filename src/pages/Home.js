@@ -5,6 +5,7 @@ import ServicesSection from "../components/ServicesSection";
 import FacilitiesSection from "../components/FacilitiesSection";
 import ReviewsSection from "../components/ReviewsSection";
 import GMap from "../components/GMap";
+import OpenHour from "../components/Open-hour";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     <ServicesSection />
     <FacilitiesSection />
     <ReviewsSection />
+    <OpenHour/>
     <GMap />
   </div>
   );
