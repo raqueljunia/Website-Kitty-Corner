@@ -9,7 +9,8 @@ const CatHotel = () => {
       <div className="cat-hotel-image">
         <img src={catHotel1} alt="Cat Hotel" />
         <div className="text-container">
-          <h1 className="cat-hotel-title">Cat Hotel by Kitty Corner</h1>
+          <h1 className="cat-hotel-title">Cat Hotel</h1>
+          <p className="by-kitty-corner">by Kitty Corner</p>
         </div>
       </div>
       <div className="additional-content">

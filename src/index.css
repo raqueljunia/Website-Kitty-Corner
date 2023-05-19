@@ -213,84 +213,123 @@ video {
 }
 
 /* index.css */
+
+/* Cat Hotel container */
 .cat-hotel-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
+/* Cat Hotel image */
 .cat-hotel-image {
   position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .cat-hotel-image img {
+  display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
   opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cat-hotel-image:hover img {
+  opacity: 1;
 }
 
 .text-container {
   position: absolute;
-  top: 50%;
+  bottom: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
 }
 
 .cat-hotel-title {
-  color: #8B4513;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #442811;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
 }
 
+.cat-hotel-title:hover {
+  cursor: pointer;
+}
+
+.cat-hotel-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #7d573e;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cat-hotel-title:hover::after {
+  transform: scaleX(1);
+}
+
+.by-kitty-corner {
+  font-size: 23px;
+  color: #8f6547;
+  margin-top: 4px;
+}
+
+/* Additional content */
 .additional-content {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .text-content {
-  flex: 7;
+  flex: 1;
   padding-right: 20px;
 }
 
 .welcome-text {
-  color: #8B4513;
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  color: #442811;
+  margin-bottom: 16px;
 }
 
 .description-text {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.additional-image {
-  flex: 3;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 18px;
+  color: #5d4534;
 }
 
 .additional-image img {
-  width: 100%;
+  width: 300px;
   height: auto;
+  border-radius: 8px;
 }
 
+/* Price list */
 .price-list {
-  background-color: #F4E8DB;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .price-list-title {
-  color: #8B4513;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  color: #442811;
+  margin-bottom: 16px;
 }
 
 .price-list-table {
@@ -302,66 +341,87 @@ video {
 .price-list-table td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #8B4513;
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #ddd;
 }
 
 .price-list-table th {
-  color: #fff;
   font-weight: bold;
-  background-color: #8B4513;
+  color: #442811;
 }
 
 .price-list-table td {
-  color: #333;
+  color: #5d4534;
 }
 
 .price-list-table tr:hover {
-  background-color: #704829;
+  background-color: #f7eede;
 }
 
+.price-list-table th:hover,
+.price-list-table td:hover {
+  background-color: transparent;
+}
 
+.price-list-table th:hover {
+  color: #442811;
+}
+
+/* Feature list */
 .feature-list {
-  margin-bottom: 20px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .feature-list h3 {
-  color: #8B4513;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #442811;
+  margin-bottom: 16px;
 }
 
 .feature-list ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
+  padding-left: 20px;
+  color: #5d4534;
+}
+
+.feature-list li {
+  margin-bottom: 8px;
+}
+
+/* Book now */
+.book-now {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
 }
 
 .book-now h3 {
-  color: #8B4513;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  color: #442811;
+  margin-bottom: 16px;
 }
 
 .book-now-button {
-  background-color: #8B4513;
-  color: #fff;
-  border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #7d573e;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .book-now-button:hover {
-  background-color: #654321;
+  background-color: #4a311e;
 }
 
 .contact-info {
-  color: #333;
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 16px;
+  color: #5d4534;
+  margin-top: 16px;
 }
