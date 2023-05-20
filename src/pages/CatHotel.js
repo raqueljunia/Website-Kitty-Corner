@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import catHotel1 from '../assets/img/catHotel1.jpg';
 import catHotel2 from '../assets/img/catHotel2.jpg';
+import catHotel5 from '../assets/img/catHotel5.jpg';
+import catHotel6 from '../assets/img/catHotel6.jpg';
 import '../index.css';
 
 const CatHotel = () => {
+  const [currentImage, setCurrentImage] = useState(catHotel1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentImage === catHotel1) {
+        setCurrentImage(catHotel5);
+      } else if (currentImage === catHotel5) {
+        setCurrentImage(catHotel6);
+      } else {
+        setCurrentImage(catHotel1);
+      }
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentImage]);
+
   return (
     <div className="cat-hotel-container">
       <div className="cat-hotel-image">
-        <img src={catHotel1} alt="Cat Hotel" />
+        <img src={currentImage} alt="Cat Hotel" />
         <div className="text-container">
           <h1 className="cat-hotel-title">Cat Hotel</h1>
           <p className="by-kitty-corner">by Kitty Corner</p>
@@ -30,25 +50,25 @@ const CatHotel = () => {
           <thead>
             <tr>
               <th>Service</th>
-              <th>Price</th>
+              <th>Price per day</th>
+              <th>Price per week</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Standard Accommodation</td>
-              <td>$20 per day</td>
+              <td>Standard</td>
+              <td>IDR 200.000</td>
+              <td>IDR 1.000.000</td>
             </tr>
             <tr>
-              <td>Luxury Suite</td>
-              <td>$50 per day</td>
+              <td>Premium</td>
+              <td>IDR 300.000</td>
+              <td>IDR 1.500.000</td>
             </tr>
             <tr>
-              <td>Playtime and Exercise</td>
-              <td>$10 per session</td>
-            </tr>
-            <tr>
-              <td>Grooming</td>
-              <td>$30 per session</td>
+              <td>Luxury</td>
+              <td>IDR 500.000</td>
+              <td>IDR 2.500.000</td>
             </tr>
           </tbody>
         </table>
