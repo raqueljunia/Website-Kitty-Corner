@@ -5,6 +5,7 @@ const HotelBookingForm = () => {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [numCats, setNumCats] = useState(1);
+  const [roomType, setRoomType] = useState('Premium');
 
   const handleCheckInChange = (e) => {
     setCheckIn(e.target.value);
@@ -18,12 +19,12 @@ const HotelBookingForm = () => {
     setNumCats(parseInt(e.target.value, 10));
   };
 
+  const handleRoomTypeChange = (e) => {
+    setRoomType(e.target.value);
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    // Lakukan sesuatu setelah tombol Check Availability ditekan
-    // Misalnya, panggil fungsi untuk memeriksa ketersediaan hotel berdasarkan input pengguna
-    // atau tampilkan pesan bahwa pemesanan sedang diproses
   };
 
   return (
@@ -51,7 +52,7 @@ const HotelBookingForm = () => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="num-cats">Jumlah Kucing:</label>
+        <label htmlFor="num-cats">Cats:</label>
         <input
           type="number"
           id="num-cats"
@@ -60,6 +61,15 @@ const HotelBookingForm = () => {
           onChange={handleNumCatsChange}
           required
         />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="room-type">Room:</label>
+        <select id="room-type" value={roomType} onChange={handleRoomTypeChange}>
+          <option value="Regular">Regular</option>
+          <option value="Premium">Premium</option>
+          <option value="Luxury">Luxury</option>
+        </select>
       </div>
 
       <button type="submit">Check Availability</button>
