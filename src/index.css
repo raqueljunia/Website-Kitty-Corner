@@ -214,255 +214,162 @@ video {
   margin-right: -40px;
 }
 
-/* CSS */
-.cat-hotel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
 
-.cat-hotel-image {
+.header-container {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  overflow: hidden;
 }
 
-/* CSS */
-@keyframes imageAnimation {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0.7;
-  }
-  80% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
+/* Hotel */
+
+.header-container {
+  position: relative;
 }
 
-.cat-hotel-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  opacity: 1;
-  animation: imageAnimation 10s infinite;
+.header-image {
+  position: relative;
 }
 
-.cat-hotel-image:hover img {
+.header-image img {
+  transition: opacity 0.5s ease;
+  width: 100%; /* Atur ukuran gambar */
+  height: auto; /* Atur ukuran gambar */
+}
+
+.image-opacity {
   opacity: 0.7;
+}
+
+.image-opacity:hover {
+  opacity: 1;
 }
 
 .text-container {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .cat-hotel-title {
-  font-size: 50px;
+  font-size: 64px;
   font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 8px;
-  position: relative;
-  display: inline-block;
-}
-
-.cat-hotel-title:hover {
-  cursor: pointer;
-}
-
-.cat-hotel-title::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #7d573e;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.cat-hotel-title:hover::after {
-  transform: scaleX(1);
+  color: rgb(36, 158, 160);
+  text-align: center;
+  text-shadow: 4px 4px 8px #000000;
 }
 
 .by-kitty-corner {
-  font-size: 23px;
-  color: #8f6547;
-  margin-top: 4px;
-}
-
-.additional-content {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  margin-top: 40px;
-  width: 100%;
-  max-width: 800px;
-  height: 100vh;
-}
-
-.text-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 40px;
-  text-align: left;
-}
-
-.welcome-text {
-  font-size: 24px;
-  color: #442811;
-  margin-bottom: 16px;
-}
-
-.description-text {
-  font-size: 18px;
-  color: #5d4534;
-}
-
-.additional-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.additional-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.additional-image img:hover {
-  opacity: 0.7;
-}
-
-/* Rest of the CSS styles remain the same */
-
-
-/* Price list */
-.price-list {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 800px;
-}
-
-.price-list-title {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
-  color: #442811;
-  margin-bottom: 16px;
-}
-
-.price-list-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.price-list-table th,
-.price-list-table td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.price-list-table th {
-  font-weight: bold;
-  color: #442811;
-}
-
-.price-list-table td {
-  color: #5d4534;
-}
-
-.price-list-table tr:hover {
-  background-color: #f7eede;
-}
-
-.price-list-table th:hover,
-.price-list-table td:hover {
-  background-color: transparent;
-}
-
-.price-list-table th:hover {
-  color: #442811;
-}
-
-/* Feature list */
-.feature-list {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 800px;
-}
-
-.feature-list h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #442811;
-  margin-bottom: 16px;
-}
-
-.feature-list ul {
-  padding-left: 20px;
-  color: #5d4534;
-}
-
-.feature-list li {
-  margin-bottom: 8px;
-}
-
-/* Book now */
-.book-now {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 800px;
+  color: #ffffff;
   text-align: center;
 }
 
-.book-now h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #442811;
-  margin-bottom: 16px;
+.by-kitty-corner span {
+  display: block;
+  font-size: 14px;
+  margin-top: -5px;
 }
 
-.book-now-button {
+.by-kitty-corner::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(210, 119, 40);
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.by-kitty-corner:hover::after {
+  width: 100%;
+}
+
+.hotel-booking-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(36, 158, 160);
+}
+
+.hotel-booking-form label {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.hotel-booking-form input[type='date'],
+.hotel-booking-form input[type='number'] {
+  padding: 8px;
+  margin-left: 10px ;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hotel-booking-form button {
   padding: 10px 20px;
+  margin-top: -10px;
+  margin-left: 10px;
+  background-color: rgb(227, 157, 51);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hotel-booking-form button:hover {
+  background-color:rgb(210, 119, 40);
+}
+
+.hotel-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.hotel-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.hotel-image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotel-image-column img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hotel-image-caption {
+  margin-top: 10px;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  background-color: #7d573e;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.book-now-button:hover {
-  background-color: #4a311e;
+.hotel-image-description {
+  margin-top: 10px; /* Ubah margin-top menjadi 10px untuk spacing yang seimbang */
+  padding: 10px; /* Tambahkan padding untuk spacing yang konsisten */
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
-
-.contact-info {
-  font-size: 16px;
-  color: #5d4534;
-  margin-top: 16px;
-}
-
 
 /* faizul css caffe menu */
 
