@@ -16,7 +16,7 @@ const HotelHeader = () => {
       } else {
         setCurrentImage(catHotel1);
       }
-    }, 5000);
+    }, 5500);
 
     return () => {
       clearInterval(interval);

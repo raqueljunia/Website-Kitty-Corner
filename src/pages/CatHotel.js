@@ -9,8 +9,8 @@ const CatHotel = () => {
     <div>
       <HotelHeader />
       <HotelText />
-      <HotelPriceList />
       <HotelBookingForm />
+      <HotelPriceList />
     </div>
   );
 };
