@@ -15,7 +15,6 @@ const Home = () => {
     <ServicesSection />
     <FacilitiesSection />
     <ReviewsSection />
-    <OpenHour/>
     <GMap />
   </div>
   );

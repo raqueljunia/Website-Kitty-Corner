@@ -114,7 +114,7 @@ const ReviewsSection = () => {
             <Container>
               <Row>
                 {reviewsChunk.map(review => (
-                  <Col key={review.id} xs={12} sm={6} md={4} lg={4}>
+                  <Col key={review.id} size={12} sm={6} md={4}>
                     <Card className="review-card text-white">
                       <div className="profile-img">
                         <img src={review.image} alt="Profile" />

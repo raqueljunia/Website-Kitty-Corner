@@ -1,10 +1,12 @@
 import React from 'react';
+import AdoptionHeader from '../components/AdoptionHeader';
+import AdoptionText from '../components/AdoptionText';
 
 const CatAdoption = () => {
   return (
     <div>
-      <h1>Cat Adoption</h1>
-      <p>Cat Adoption page.</p>
+      <AdoptionHeader />
+      <AdoptionText />
     </div>
   );
 }
