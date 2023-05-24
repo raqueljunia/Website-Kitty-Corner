@@ -1,11 +1,13 @@
+import profileRaquel from '../assets/img/profileRaquel.jpg';
+
+
 const membersData = [
     {
       name: "Raquel Junia Hermawan",
       nim: "00000079018",
-      imgURL:
-        "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+      imgURL: profileRaquel,
       quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      instagram: "https://www.instagram.com/",
+      instagram: "https://www.instagram.com/_raqueljn",
       github: "https://github.com/"
     },
     {

@@ -8,7 +8,7 @@ const GMap = () => {
             <div class="map-wrap">
             <iframe
                 title="google-maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630603985!2d88.0495328251319!3d22.675752087592436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1653845709428!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60238.51008173851!2d106.627325!3d-6.175110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f17053a8a6d7%3A0x406bdbc33757790!2sTangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1653845709428!5m2!1sen!2sid"
                 width="100%"
                 height="450"
                 style={{ border: "0" }}

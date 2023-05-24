@@ -1,110 +1,129 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import pizza from "../assets/img/Pizza.png";
-import friedRice from "../assets/img/friedRice.jpeg";
-import honeyChicken from "../assets/img/honeyChicken.jpg";
-import lemonJuice from "../assets/img/lemon-juice.png";
-import strawberryCake from "../assets/img/strawberrycake.jpg";
+import omlet from "../assets/img/product/omlet.jpg";
+import kwetiaw from "../assets/img/product/kwetiaw.jpg";
+import cheeseCake from "../assets/img/product/cheese-cake.jpg";
+import manggoPuding from "../assets/img/product/manggo-puding.jpg";
+import matchaShake from "../assets/img/product/matcha-shake.jpg";
+import strawberryShake from "../assets/img/product/strawberry-sake.jpg";
+import oreoShake from "../assets/img/product/oreo-shake.jpg";
+import bananaShake from "../assets/img/product/banan-shake.jpg";
+import caramelShake from "../assets/img/product/caramel-shake.jpg";
+import catIcecream from "../assets/img/product/cat-ice-cream.jpg";
+import frutieCake from "../assets/img/product/frutie-cake.jpg";
+import roleCake from "../assets/img/product/role-cake.jpg";
+import tartCake from "../assets/img/product/tart-cake.jpg";
+import dragonPuding from "../assets/img/product/dragon-puding.jpg";
+import cake from "../assets/img/product/cake.jpg";
+import fruitPuding from "../assets/img/product/fruit-puding.jpg";
 import TrackVisibility from 'react-on-screen';
+
 
 export const CafeMenu = () => {
 
   const projects = [
     {
-      title: "Pizza",
+      title: "Omlet",
       description: "lalala",
-      imgUrl: pizza,
+      imgUrl: omlet,
+      harga : "10.000",
     },
     {
-      title: "Fried Rice",
+      title: "Kwetiaw",
       description: "lalala",
-      imgUrl: friedRice,
+      imgUrl: kwetiaw,
+      harga : "15.000",
     },
     {
-      title: "Honey Chicken Bowl",
+      title: "Cheese Cake",
       description: "lalala",
-      imgUrl: honeyChicken,
+      imgUrl: cheeseCake,
+      harga : "14.000",
     },
     {
-      title: "Pizza",
+      title: "Manggo Puding",
       description: "lalala",
-      imgUrl: pizza,
+      imgUrl: manggoPuding,
+      harga : "19.000",
     },
-    {
-      title: "Fried Rice",
-      description: "lalala",
-      imgUrl: friedRice,
-    },
-    {
-      title: "Honey Chicken Bowl",
-      description: "lalala",
-      imgUrl: honeyChicken,
-    },
+
   ];
 
   const beverages = [
     {
-      title: "Lemon Juice",
+      title: "Matcha Shake",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: matchaShake,
+      harga : "17.200",
     },
     {
-      title: "Lemon Juice",
+      title: "Strawberry Shake",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: strawberryShake,
+      harga : "18.000",
     },
     {
-      title: "Lemon Juice",
+      title: "Oreo Shake",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: oreoShake,
+      harga : "16.000",
     },
     {
-      title: "Lemon Juice",
+      title: "Banana Shake",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: bananaShake,
+      harga : "16.000",
     },
     {
-      title: "Lemon Juice",
+      title: "Caramel Shake",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: caramelShake,
+      harga : "19.800",
     },
     {
-      title: "Lemon Juice",
+      title: "Cat Ice Cream",
       description: "lilili",
-      imgUrl: lemonJuice,
+      imgUrl: catIcecream,
+      harga : "17.900",
     },
   ];
 
   const dessert = [
     {
-      title: "Strawberry Cake",
+      title: "Fruit Cake",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: frutieCake,
+      harga : "14.700",
     },
     {
-      title: "Strawberry Cake",
+      title: "Role Cake",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: roleCake,
+      harga : "11.300",
     },
     {
-      title: "Strawberry Cake",
+      title: "Tart Cake",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: tartCake,
+      harga : "12.900",
     },
     {
-      title: "Strawberry Cake",
+      title: "Dragon Puding",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: dragonPuding,
+      harga : "11.000",
     },
     {
-      title: "Strawberry Cake",
+      title: "Cake",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: cake,
+      harga : "18.700",
     },
     {
-      title: "Strawberry Cake",
+      title: "Fruit Puding",
       description: "lululu",
-      imgUrl: strawberryCake,
+      imgUrl: fruitPuding,
+      harga : "10.000",
     },
   ];
 

@@ -32,7 +32,7 @@ const AboutUs = () => {
           In addition to these technologies, we have integrated two external APIs to enhance the functionality of Kitty Corner:
         </p>
         <ul>
-          <li>Google Maps API</li>
+          <li></li>
           <li></li>
           <li></li>
           <li></li>
@@ -42,13 +42,14 @@ const AboutUs = () => {
           We hope you enjoy exploring the various services, facilities, and features we have implemented.
         </p>
         <p>
-          Thank you for visiting Kitty Corner, the ultimate destination for cat lovers!
+          Thank you for visiting Kitty Corner!
         </p>
       </div>
       </div>
       <div className="header-2">
         <br /> <br />
-        <h1>Our Members</h1>
+        <h1>Let's Meet</h1>
+        <h2>Our Members</h2>
       </div>
       <br />
       <div className="cards">
