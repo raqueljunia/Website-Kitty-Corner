@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
-import '../index.css';
+import './CatHotel.css';
 import catHotel10 from '../assets/img/catHotel10.jpg';
 import catHotel11 from '../assets/img/catHotel11.jpg';
 import catHotel12 from '../assets/img/catHotel12.jpg';

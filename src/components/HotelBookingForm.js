@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../index.css';
+import './CatHotel.css';
 
 const HotelBookingForm = () => {
   const [checkIn, setCheckIn] = useState('');

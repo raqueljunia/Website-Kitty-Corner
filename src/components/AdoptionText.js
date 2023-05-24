@@ -1,6 +1,7 @@
 import React from 'react';
 import catAdoption2 from '../assets/img/catAdoption2.jpg';
 import catAdoption3 from '../assets/img/catAdoption3.jpg';
+import './CatAdoption.css';
 
 const AdoptionText = () => {
   return (

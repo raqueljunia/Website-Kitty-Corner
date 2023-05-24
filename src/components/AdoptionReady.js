@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
-import '../index.css';
+import './CatAdoption.css';
 import CatReadyAdopt1 from '../assets/img/CatReadyAdopt1.jpg';
 import CatReadyAdopt2 from '../assets/img/CatReadyAdopt2.jpg';
 import CatReadyAdopt3 from '../assets/img/CatReadyAdopt3.jpg';

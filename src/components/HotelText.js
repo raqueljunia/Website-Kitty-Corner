@@ -1,8 +1,8 @@
 import React from 'react';
-import '../index.css';
 import catHotel7 from '../assets/img/catHotel7.jpg';
 import catHotel8 from '../assets/img/catHotel8.jpg';
 import catHotel9 from '../assets/img/catHotel9.jpg';
+import './CatHotel.css';
 
 const HotelText = () => {
   return (

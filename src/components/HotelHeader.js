@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import catHotel1 from '../assets/img/catHotel1.jpg';
 import catHotel5 from '../assets/img/catHotel5.jpg';
 import catHotel6 from '../assets/img/catHotel6.jpg';
-import '../index.css';
+import './CatHotel.css';
 
 const HotelHeader = () => {
   const [currentImage, setCurrentImage] = useState(catHotel1);
@@ -30,7 +30,7 @@ const HotelHeader = () => {
         <div className="overlay" />
         <div className="text-container">
           <h1 className="cat-hotel-title">CAT HOTEL</h1>
-          <p className="by-kitty-corner">KITTY CORNER</p>
+          <p className="kitty-corner">KITTY CORNER</p>
         </div>
       </div>
     </div>
