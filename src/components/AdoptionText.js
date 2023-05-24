@@ -10,10 +10,10 @@ const AdoptionText = () => {
         <div className="adoption-content">
           <h2 className="adoption-text-title">A House is Not a Home Without a Furry Friend</h2>
           <p className="adoption-text-description">
-            Welcome to our adoption center! We believe that a house becomes a home when it is filled
-            with the love and companionship of a furry friend. Our mission is to find loving homes for
-            abandoned and stray cats, and to match them with caring individuals or families. By
-            adopting a cat, you not only gain a lifelong companion but also provide a second chance at
+            Welcome to our adoption center! We believe a house becomes a home when filled
+            with the love and companionship of a furry friend.<br></br><br></br>Our mission is to find loving homes for
+            abandoned and stray cats, and match them with caring individuals or families. By
+            adopting a cat, you gain a lifelong companion and provide a second chance at
             happiness for these adorable creatures.
           </p>
         </div>
