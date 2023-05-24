@@ -35,8 +35,6 @@ const AboutUs = () => {
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
-          <li></li>
         </ul>
         <p>
           We hope you enjoy exploring the various services, facilities, and features we have implemented.

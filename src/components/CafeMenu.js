@@ -152,7 +152,7 @@ export const CafeMenu = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row >
                         {
                           projects.map((project, index) => {
                             return (
@@ -171,10 +171,12 @@ export const CafeMenu = () => {
                         {
                           beverages.map((project, index) => {
                             return (
+                              <Col className="item-center" style={{ marginRight: "10px", marginBottom: "20px" }}>
                               <ProjectCard
                                 key={index}
                                 {...project}
                                 />
+                              </Col>
                             )
                           })
                         }
