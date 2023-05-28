@@ -1,17 +1,8 @@
-.bookingform-section {
-    display:flex;
-    justify-content:center;
-    box-sizing : border-box;
+#form{
+    padding: 1rem;
     background-color: #005F61;
-    min-height : 100vh;
-    font-weight : bold;
     color: white;
-    align-items: center;
+    box-shadow : 1px solid black;
+    height: 100vh;
+    font-size : 1.3rem;
 }
-
-.logo-form img{
-    width: 200px;
-    display:flex;
-    margin: 0 auto;
-}
-
