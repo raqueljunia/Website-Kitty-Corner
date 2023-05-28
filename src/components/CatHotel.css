@@ -33,17 +33,32 @@
 }
 
 .cat-hotel-title {
-  font-size: 60px; /* Ubah ukuran tulisan menjadi 60px */
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan shadow pada tulisan */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .kitty-corner {
-  font-size: 30px; /* Ubah ukuran tulisan menjadi 30px */
+  font-size: 30px; 
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Tambahkan shadow pada tulisan */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
 }
+
+@media (max-width: 768px) {
+  .header-image {
+    height: 300px;
+  }
+  
+  .cat-hotel-title {
+    font-size: 36px;
+  }
+  
+  .kitty-corner {
+    font-size: 24px;
+  }
+}
+
 
 @keyframes lineAnimation {
   0% {
@@ -81,67 +96,79 @@
   flex: 1;
   max-width: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hotel-image-column img {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  object-fit: cover;
 }
+
 
 .hotel-image-caption {
   font-size: 24px;
   font-weight: bold;
   margin: 20px 0;
+  text-align: center; 
 }
 
 .hotel-image-description {
   font-size: 16px;
   line-height: 1.5;
+  text-align: center; 
 }
+
+/* booking form */
 
 .hotel-booking-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.hotel-booking-form form {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #24a0a0;
+  margin-bottom: 20px;
+}
+
+.hotel-booking-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .hotel-booking-form label {
-  margin-bottom: 5px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
+  font-weight: bold;
 }
 
 .hotel-booking-form input[type='date'],
-.hotel-booking-form input[type='number'] {
-  padding: 8px;
-  margin-right: 10px;
+.hotel-booking-form input[type='number'],
+.hotel-booking-form select {
+  padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hotel-booking-form select {
-  padding: 8px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #333;
-}
-
-.hotel-booking-form select option {
-  padding: 8px;
+  width: 100%;
 }
 
 .hotel-booking-form button {
   padding: 10px 20px;
-  margin-top: -10px;
-  margin-left: 10px;
+  margin-top: 10px;
   background-color: #e39d33;
   color: #fff;
   border: none;
@@ -152,6 +179,39 @@
 .hotel-booking-form button:hover {
   background-color: #d27728;
 }
+
+.availability-table {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.availability-table h2 {
+  margin-bottom: 10px;
+}
+
+.availability-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.availability-table th,
+.availability-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.availability-table th {
+  font-weight: bold;
+}
+
+
+
+/* Price List */
 
 .hotel-price-list {
   padding: 50px 0;

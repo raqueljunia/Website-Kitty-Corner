@@ -17,7 +17,7 @@ const HotelPriceList = () => {
         'Delicious gourmet meals',
         'Access to premium amenities',
       ],
-      imgUrl: catHotel10,
+      imgUrl: catHotel11,
     },
     {
       type: 'Luxury Room',
@@ -28,7 +28,7 @@ const HotelPriceList = () => {
         'Customized menu and dietary options',
         'Exclusive access to spa and wellness services',
       ],
-      imgUrl: catHotel11,
+      imgUrl: catHotel10,
     },
     {
       type: 'Regular Room',
