@@ -10,6 +10,7 @@ import CatAdoption from './pages/CatAdoption';
 import Cafe from './pages/Cafe';
 import CatPlayground from './pages/CatPlayground';
 import AboutUs from './pages/AboutUs';
+import BookPage from './pages/BookPage';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/facilities/cafe" element={<Cafe />} />
         <Route path="/facilities/catPlayground" element={<CatPlayground />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/bookonline" element={<BookPage />}/>
+        <Route path="/catSalon" element={<CatSalon />}/>
       </Routes>
       <FooterComponent />
       </div>
