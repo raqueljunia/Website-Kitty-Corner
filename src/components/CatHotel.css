@@ -134,7 +134,7 @@
 
 .hotel-booking-form form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -142,7 +142,7 @@
 .hotel-booking-form .form-group {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .hotel-booking-form label {
@@ -152,18 +152,15 @@
 }
 
 .hotel-booking-form input[type='date'],
-.hotel-booking-form input[type='number'],
-.hotel-booking-form select {
+.hotel-booking-form input[type='text'],
+.hotel-booking-form input[type='email'],
+.hotel-booking-form input[type='tel'] {
   padding: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.hotel-booking-form select {
-  width: 100%;
 }
 
 .hotel-booking-form button {
@@ -209,6 +206,31 @@
   font-weight: bold;
 }
 
+.booking-form {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.notification {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e9f7ef;
+  color: #13823c;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
 
 /* Price List */
