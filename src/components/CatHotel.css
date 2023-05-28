@@ -154,13 +154,41 @@
 .hotel-booking-form input[type='date'],
 .hotel-booking-form input[type='text'],
 .hotel-booking-form input[type='email'],
-.hotel-booking-form input[type='tel'] {
+.hotel-booking-form input[type='tel'],
+.hotel-booking-form input[type='number'],
+.hotel-booking-form select {
   padding: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-booking-form input[type='number']::-webkit-inner-spin-button,
+.hotel-booking-form input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hotel-booking-form input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.hotel-booking-form input[type='number']::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.hotel-booking-form input[type='number']::-moz-placeholder {
+  text-align: center;
+}
+
+.hotel-booking-form input[type='number']:-ms-input-placeholder {
+  text-align: center;
+}
+
+.hotel-booking-form input[type='number']::placeholder {
+  text-align: center;
 }
 
 .hotel-booking-form button {

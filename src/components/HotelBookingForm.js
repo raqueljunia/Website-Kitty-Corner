@@ -7,6 +7,8 @@ const CatHotel = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [numberOfCats, setNumberOfCats] = useState(0);
+  const [roomType, setRoomType] = useState('');
   const [showForm, setShowForm] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
   const [availabilityData, setAvailabilityData] = useState([]);
@@ -29,6 +31,14 @@ const CatHotel = () => {
 
   const handlePhoneNumberChange = (e) => {
     setPhoneNumber(e.target.value);
+  };
+
+  const handleNumberOfCatsChange = (e) => {
+    setNumberOfCats(parseInt(e.target.value));
+  };
+
+  const handleRoomTypeChange = (e) => {
+    setRoomType(e.target.value);
   };
 
   const handleFormSubmit = (e) => {
@@ -56,7 +66,7 @@ const CatHotel = () => {
     e.preventDefault();
 
     // Perform form validation here
-    if (name && email && phoneNumber) {
+    if (name && email && phoneNumber && numberOfCats > 0 && roomType) {
       // Send verification email here
       setShowNotification(true);
     }
@@ -147,6 +157,33 @@ const CatHotel = () => {
                 onChange={handlePhoneNumberChange}
                 required
               />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="number-of-cats">Number of Cats:</label>
+              <input
+                type="number"
+                id="number-of-cats"
+                value={numberOfCats}
+                onChange={handleNumberOfCatsChange}
+                min={1}
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="room-type">Room Type:</label>
+              <select
+                id="room-type"
+                value={roomType}
+                onChange={handleRoomTypeChange}
+                required
+              >
+                <option value="">Select Room Type</option>
+                <option value="Regular">Regular</option>
+                <option value="Premium">Premium</option>
+                <option value="Luxury">Luxury</option>
+              </select>
             </div>
 
             <button type="submit">Book Your Room</button>
