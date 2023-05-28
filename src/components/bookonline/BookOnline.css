@@ -1,0 +1,17 @@
+.bookingform-section {
+    display:flex;
+    justify-content:center;
+    box-sizing : border-box;
+    background-color: #005F61;
+    min-height : 100vh;
+    font-weight : bold;
+    color: white;
+    align-items: center;
+}
+
+.logo-form img{
+    width: 200px;
+    display:flex;
+    margin: 0 auto;
+}
+

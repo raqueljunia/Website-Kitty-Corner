@@ -7,7 +7,7 @@ const Book = () => {
         // Membuat Class book-section
         <div className='book-section'>
             <h1 className='book-title'>Your Cat's Comfort is Our Priority</h1>
-            <button className='book-cta'>BOOK NOW</button>
+            <a href="/bookonline" className='book-cta'>BOOK NOW</a>
         </div>
     )
 } 
