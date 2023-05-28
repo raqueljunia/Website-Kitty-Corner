@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './CatAdoption.css';
-import catAdoptionHeader from '../assets/img/catAdoption1.jpg';
 
 const AdoptionHeader = () => {
+  const [headerImages, setHeaderImages] = useState([]);
+
+  useEffect(() => {
+    const loadRandomImages = async () => {
+      try {
+        const response = await axios.get('https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_HAxwNefneDdpcoczBQTWaLJvVqhEwwf0Wb9TlO5NAUCRRjZiR6H5fFARlC9zaKl5');
+        const images = response.data;
+        setHeaderImages(images);
+      } catch (error) {
+        console.error('Gagal memuat gambar dari API:', error);
+      }
+    };
+
+    loadRandomImages();
+  }, []);
+
   return (
     <header className="adoption-header">
-      <img src={catAdoptionHeader} alt="Cat Adoption" className="header-image" />
+      {headerImages.map((image, index) => (
+        <img src={image.url} alt={`Cat Image ${index}`} key={image.id} className="header-image" />
+      ))}
       <div className="header-overlay" />
       <div className="header-text-container">
         <h1 className="header-title">Cat Adoption</h1>

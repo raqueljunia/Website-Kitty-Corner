@@ -10,12 +10,8 @@
 .image-opacity {
   width: 100%;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.3s ease;
-}
-
-.image-opacity:hover {
-  opacity: 1;
 }
 
 .overlay {
@@ -37,16 +33,38 @@
 }
 
 .cat-hotel-title {
-  font-size: 48px;
+  font-size: 60px; /* Ubah ukuran tulisan menjadi 60px */
   font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan shadow pada tulisan */
 }
 
 .kitty-corner {
-  font-size: 24px;
+  font-size: 30px; /* Ubah ukuran tulisan menjadi 30px */
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Tambahkan shadow pada tulisan */
 }
 
+@keyframes lineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.kitty-corner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  animation: lineAnimation 1s ease-in-out forwards; /* Tambahkan animasi garis muncul */
+}
+
+
+/* Text */
 
 .hotel-text-container {
   padding: 40px 0;

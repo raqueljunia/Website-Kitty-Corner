@@ -1,5 +1,4 @@
 import React from 'react';
-import catAdoption2 from '../assets/img/catAdoption2.jpg';
 import catAdoption3 from '../assets/img/catAdoption3.jpg';
 import './CatAdoption.css';
 
@@ -7,7 +6,6 @@ const AdoptionText = () => {
   return (
     <div className="adoption-text-container">
       <div className="adoption-images">
-        <img src={catAdoption2} alt="Cat Adoption 2" className="adoption-image" />
         <div className="adoption-content">
           <h2 className="adoption-text-title">A House is Not a Home Without a Furry Friend</h2>
           <p className="adoption-text-description">
