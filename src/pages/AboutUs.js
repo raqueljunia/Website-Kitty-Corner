@@ -18,34 +18,35 @@ const AboutUs = () => {
           Welcome to the Kitty Corner website! As part of our final project for the "Introduction to Internet Technology" class, we have developed a website using React JS. Kitty Corner is a unique pet store dedicated to cats, offering various services such as Cat Salon, Cat Hotel, Cat Shop, and Cat Adoption. Additionally, we provide facilities like a Cafe and Cat Playground to enhance the experience for our customers and feline friends.
         </p>
         <p>
-          In the development of this website, we have utilized several technologies and tools to create a seamless user experience. Here are the key technologies and frameworks we have incorporated:
+          In the development of this website, we have utilized several technologies and tools to create a good user experience. Here are the key technologies and frameworks we have incorporated:
         </p>
         <ul>
           <li>Library: React.js</li>
           <li>Library: Axios</li>
           <li>Library: SweetAlert.js</li>
-          <li>Tech used: react-router-dom</li>
           <li>Framework: Bootstrap</li>
           <li>Package: Fontawesome</li>
         </ul>
         <p>
-          In addition to these technologies, we have integrated two external APIs to enhance the functionality of Kitty Corner:
+          In addition to these technologies, we have integrated external API to enhance the functionality of Kitty Corner:
         </p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+            <li>
+              <a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color:'black' }}>
+                The Cat API
+              </a>
+            </li>
+          </ul>
         <p>
           We hope you enjoy exploring the various services, facilities, and features we have implemented.
         </p>
         <p>
-          Thank you for visiting Kitty Corner!
+          Thank you for visiting Kitty Corner! :D
         </p>
       </div>
       </div>
       <div className="header-2">
-        <br /> <br />
+        <br /> <br /> <br />
         <h1>Let's Meet</h1>
         <h2>Our Members</h2>
       </div>
@@ -57,6 +58,7 @@ const AboutUs = () => {
             <h2>{member.name}</h2>
             <p>{member.nim}</p>
             <p>{member.quote}</p>
+            <hr />
             <div className="social-links">
               <a href={member.instagram} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="icon-1"/>
@@ -68,7 +70,7 @@ const AboutUs = () => {
           </div>
         ))}
       </div>
-    <br /><br />
+    <br /><br /><br />
     </div>
   );
 };

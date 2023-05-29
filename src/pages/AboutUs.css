@@ -1,5 +1,6 @@
 .about-us {
-    background-color: rgb(250, 171, 54);
+    background-color: rgb(66, 155, 85);
+    padding-bottom: 50px;
 }
 
 .about-us .cards {
@@ -11,11 +12,15 @@
   }
   
 .about-us .card {
-    background-color: #f4f4f4;
+    background-color: #fcfff5;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ .about-us .card:hover {
+    box-shadow: 5px 7px 10px #bcff4f;
  }
   
 .about-us .profile-img {
@@ -26,11 +31,15 @@
     margin-bottom: 20px;
     margin-left: 5px;
 }
+
+.about-us h1 {
+    color: #ffffff;
+}
   
 .about-us h2 {
     font-size: 1.5rem;
     margin-bottom: 5px;
-    color: #333333;
+    color: #ffffff;
 }
   
 .about-us  p {
@@ -105,11 +114,7 @@
 
 .about-us .card h2 {
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 5px;
     color: #333333;
-}
-
-.about-us .card h2:hover {
-    font-weight: bold;
-    color: rgb(84, 94, 202);
 }

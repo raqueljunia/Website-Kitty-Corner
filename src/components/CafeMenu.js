@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import omlet from "../assets/img/product/omlet.jpg";
 import kwetiaw from "../assets/img/product/kwetiaw.jpg";
-import cheeseCake from "../assets/img/product/cheese-cake.jpg";
+import cheeseCake from "../assets/img/product/strawberrycake.jpg";
 import manggoPuding from "../assets/img/product/manggo-puding.jpg";
 import matchaShake from "../assets/img/product/matcha-shake.jpg";
 import strawberryShake from "../assets/img/product/strawberry-sake.jpg";
@@ -16,6 +16,14 @@ import tartCake from "../assets/img/product/tart-cake.jpg";
 import dragonPuding from "../assets/img/product/dragon-puding.jpg";
 import cake from "../assets/img/product/cake.jpg";
 import fruitPuding from "../assets/img/product/fruit-puding.jpg";
+import honeyChicken from "../assets/img/product/honeyChicken.jpg";
+import Pizza from "../assets/img/product/Pizza.png";
+import catBread from "../assets/img/product/catBread.jpg";
+import Pasta from "../assets/img/product/Pasta.jpg";
+import Salad from "../assets/img/product/Salad.jpg";
+import Coffee from "../assets/img/product/Coffee.jpg";
+import JasmineTea from "../assets/img/product/JasmineTea.jpg";
+import BlackTea from "../assets/img/product/BlackTea.jpg";
 import TrackVisibility from 'react-on-screen';
 
 
@@ -23,108 +31,155 @@ export const CafeMenu = () => {
 
   const projects = [
     {
-      title: "Omlet",
-      description: "lalala",
+      title: "Omelette",
+      description: "",
       imgUrl: omlet,
-      harga : "10.000",
+      harga : "20.000",
     },
     {
       title: "Kwetiaw",
-      description: "lalala",
+      description: "",
       imgUrl: kwetiaw,
-      harga : "15.000",
+      harga : "35.000",
     },
     {
-      title: "Cheese Cake",
-      description: "lalala",
-      imgUrl: cheeseCake,
-      harga : "14.000",
+      title: "Honey Chicken Sesame",
+      description: "",
+      imgUrl: honeyChicken,
+      harga : "30.000",
     },
     {
-      title: "Manggo Puding",
-      description: "lalala",
-      imgUrl: manggoPuding,
-      harga : "19.000",
+      title: "Pizza",
+      description: "",
+      imgUrl: Pizza,
+      harga : "43.000",
     },
-
+    {
+      title: "Italian Salad",
+      description: "",
+      imgUrl: Salad,
+      harga : "30.000",
+    },
+    {
+      title: "Pasta",
+      description: "",
+      imgUrl: Pasta,
+      harga : "27.000",
+    },
   ];
 
   const beverages = [
     {
-      title: "Matcha Shake",
-      description: "lilili",
-      imgUrl: matchaShake,
-      harga : "17.200",
+      title: "Coffee",
+      description: "",
+      imgUrl: Coffee,
+      harga : "20.000",
     },
     {
-      title: "Strawberry Shake",
-      description: "lilili",
-      imgUrl: strawberryShake,
+      title: "Mint Choco Shake",
+      description: "",
+      imgUrl: matchaShake,
+      harga : "21.000",
+    },
+    {
+      title: "Jasmine Tea",
+      description: "",
+      imgUrl: JasmineTea,
       harga : "18.000",
     },
     {
+      title: "Strawberry Shake",
+      description: "",
+      imgUrl: strawberryShake,
+      harga : "19.000",
+    },
+    {
       title: "Oreo Shake",
-      description: "lilili",
+      description: "",
       imgUrl: oreoShake,
-      harga : "16.000",
+      harga : "17.000",
     },
     {
       title: "Banana Shake",
-      description: "lilili",
+      description: "",
       imgUrl: bananaShake,
-      harga : "16.000",
+      harga : "18.000",
     },
     {
       title: "Caramel Shake",
-      description: "lilili",
+      description: "",
       imgUrl: caramelShake,
-      harga : "19.800",
+      harga : "18.800",
     },
     {
-      title: "Cat Ice Cream",
-      description: "lilili",
+      title: "Cat-Shaped Ice Cream",
+      description: "",
       imgUrl: catIcecream,
-      harga : "17.900",
+      harga : "20.000",
+    },
+    {
+      title: "Black Tea",
+      description: "",
+      imgUrl: BlackTea,
+      harga : "20.000",
     },
   ];
 
   const dessert = [
     {
-      title: "Fruit Cake",
-      description: "lululu",
+      title: "Chocolate Brownie Cake",
+      description: "",
       imgUrl: frutieCake,
-      harga : "14.700",
+      harga : "26.000",
     },
     {
       title: "Role Cake",
-      description: "lululu",
+      description: "",
       imgUrl: roleCake,
-      harga : "11.300",
+      harga : "15.000",
     },
     {
       title: "Tart Cake",
-      description: "lululu",
+      description: "",
       imgUrl: tartCake,
-      harga : "12.900",
+      harga : "24.900",
     },
     {
-      title: "Dragon Puding",
-      description: "lululu",
+      title: "Dragon Fruit Pudding",
+      description: "",
       imgUrl: dragonPuding,
-      harga : "11.000",
+      harga : "19.000",
     },
     {
-      title: "Cake",
-      description: "lululu",
+      title: "Three-Layer Cake",
+      description: "",
       imgUrl: cake,
-      harga : "18.700",
+      harga : "25.700",
     },
     {
-      title: "Fruit Puding",
-      description: "lululu",
+      title: "Mix Fruit Pudding",
+      description: "",
       imgUrl: fruitPuding,
-      harga : "10.000",
+      harga : "20.000",
     },
+    {
+      title: "Tri-Color Cat Bread",
+      description: "",
+      imgUrl: catBread,
+      harga : "15.000",
+    },
+    {
+      title: "Cheese Cake",
+      description: "",
+      imgUrl: cheeseCake,
+      harga : "27.000",
+    },
+    {
+      title: "Manggo Puding",
+      description: "",
+      imgUrl: manggoPuding,
+      harga : "19.000",
+    }
   ];
 
 
@@ -137,7 +192,7 @@ export const CafeMenu = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Cafe Menu</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Step into Kitty Corner Cafe and indulge in a delightful culinary experience. Our charming cafe offers a delectable selection of main courses, beverages, and desserts.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -152,21 +207,17 @@ export const CafeMenu = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row >
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                      <p>Indulge in our delightful main course selection, crafted with love and care. Each dish is a symphony of flavors, combining fresh ingredients and culinary expertise. From savory classics to innovative creations, our main course offerings promise to take you on a memorable culinary journey.</p>
+                      <Row xs={1} sm={2} md={3} className="justify-content-center">
+                        {projects.map((project, index) => (
+                            <Col key={index} className="justify-content-center" style={{ marginBottom: "20px" }}>
+                              <ProjectCard {...project} />
+                            </Col>
+                          ))}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Elevate your dining experience with our refreshing selection of beverages. From aromatic coffees and soothing teas to invigorating smoothies and handcrafted juices, our drink menu offers a delightful variety to suit every preference.</p>
                       <Row>
                         {
                           beverages.map((project, index) => {
@@ -183,19 +234,14 @@ export const CafeMenu = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                      <Row>
-                        {
-                          dessert.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
+                      <p>Each delectable treat is carefully crafted to perfection, combining the finest ingredients and culinary expertise. From rich and velvety cakes to creamy and fruity delights, our dessert menu offers a symphony of flavors.</p>
+                      <Row xs={1} sm={2} md={3} className="justify-content-center">
+                          {dessert.map((project, index) => (
+                            <Col key={index} className="justify-content-center" style={{ marginBottom: "20px" }}>
+                              <ProjectCard {...project} />
+                            </Col>
+                          ))}
+                        </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

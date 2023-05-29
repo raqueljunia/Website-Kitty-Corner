@@ -216,46 +216,32 @@ video {
 
 /*** Cafe Menu ***/
 
+.project {
+  margin: 0;
+  padding: 0;
+}
+
+.project h2{
+  color: white;
+}
+
 .projectCard {
-  margin-left: 10px;
-  margin-right: 10px;
+  justify-content: center;
+  align-items: center; 
 }
 
 .card-product {
   width: 300px;
   height: 400px;
-  margin: 10px;
   background-size: 100% !important;
   background-color: black;
   background-size: cover;
   cursor: pointer;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 1px 1px 5px #cfcfcf;
+  margin: 10px auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-.card-product--menu-barry-shake {
-  background: url("assets/img/product/strawberry-sake.jpg");
-}
-.card-product--menu-caramel-shake {
-  background: url("assets/img/product/caramel-shake.jpg");
-}
-.card-product--menu-oreo-shake {
-  background: url("assets/img/product/oreo-shake.jpg");
-}
-.card-product--menu-macha-shake {
-  background: url("assets/img/product/matcha-shake.jpg");
-}
-.card-product--menu-kwetiaw {
-  background: url("assets/img/product/kwetiaw.jpg");
-}
-.card-product--menu-omlet {
-  background: url("assets/img/product/omlet.jpg");
-}
-.card-product--menu-cheese-cake {
-  background: url("assets/img/product/cheese-cake.jpg");
-}
-.card-product--menu-manggo-puding {
-  background: url("assets/img/product/manggo-puding.jpg");
 }
 
 .overlay {
@@ -363,6 +349,7 @@ video {
   background-color: rgb(26, 26, 26);
   align-items: center;
 }
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -487,6 +474,9 @@ video {
   right: 0;
   z-index: -4;
 }
+
+/***Cat Playground***/
+
 .about-section{
 	position:relative;
 	padding: 120px 0px;
@@ -712,20 +702,43 @@ video {
   margin-left: 40px;
   margin-right: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  margin-top: 20px;
+  grid-gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-card {
+  margin-top: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
   border-radius: 8px;
   text-align: center;
+  max-width: 30%; 
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    max-width: 45%; 
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-list {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .product-card {
+    font-size: 11px;
+  }
+  .product-card img {
+    width: 100%;
+  }
 }
 
 .product-card img {
-  width: 70%;
+  width: 50%;
   max-height: 250px;
   object-fit: cover;
   border-radius: 8px;
@@ -752,7 +765,7 @@ video {
 }
 
 .product-card button:hover {
-  background-color: #0056b3;
+  background-color: #784cc0;
 }
 
 .catshop .filter {
