@@ -19,7 +19,7 @@ import CatNipToy from "../assets/img/catnipToy.jpg";
 import CatWheel from "../assets/img/catWheel.png";
 
 const CatShop = () => {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       imgUrl: Purina,
       category: "cat food",

@@ -1,8 +1,6 @@
-import react from 'react' // Import React dari library React
-import './CardSalon.css' // Import CSS dari file CardSalon.css
-import icon from '../../assets/img/Icon.png' // Import Gambar dari folder assets 
+import './CardSalon.css';
+import icon from '../../assets/img/Icon.png'
 
-// Membuat Komponen CardSalon dan menerima props
 const CardSalon = (props) => {
     return (
         <div className='cardsalon-component'>
@@ -13,5 +11,4 @@ const CardSalon = (props) => {
     )
 }
 
-// Export Komponen CardSalon agar dapat digunakan
 export default CardSalon;

@@ -22,7 +22,7 @@ const AdoptionHeader = () => {
   return (
     <header className="adoption-header">
       {headerImages.map((image, index) => (
-        <img src={image.url} alt={`Cat Image ${index}`} key={image.id} className="header-image" />
+        <img src={image.url} alt={`CatImage ${index}`} key={image.id} className="header-image" />
       ))}
       <div className="header-overlay" />
       <div className="header-text-container">
