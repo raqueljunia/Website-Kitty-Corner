@@ -1,4 +1,3 @@
-import react from 'react';
 import './PriceList.css'
 import priceListTable from '../../assets/img/priceList.png'
 
