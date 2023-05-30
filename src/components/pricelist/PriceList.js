@@ -10,6 +10,4 @@ const PriceList = () => {
     )
 }
 
-//Test
-
 export default PriceList;
