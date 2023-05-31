@@ -1,12 +1,15 @@
 import React from "react";
 
-const Filter = ({ handleFilter }) => {
+const Filter = ({ handleFilter, handleSearch }) => {
   return (
     <div className="filter">
-      <button onClick={() => handleFilter("all")}>All</button>
-      <button onClick={() => handleFilter("cat food")}>Cat Food</button>
-      <button onClick={() => handleFilter("cat accessories")}>Cat Accessories</button>
-      <button onClick={() => handleFilter("cat toy")}>Cat Toy</button>
+      <input type="text" placeholder="Search..." onChange={handleSearch} />
+      <select onChange={(e) => handleFilter(e.target.value)}>
+        <option value="all">All</option>
+        <option value="cat food">Cat Food</option>
+        <option value="cat accessories">Cat Accessories</option>
+        <option value="cat toy">Cat Toys</option>
+      </select>
     </div>
   );
 };

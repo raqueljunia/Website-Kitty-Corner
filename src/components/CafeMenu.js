@@ -222,7 +222,7 @@ export const CafeMenu = () => {
                         {
                           beverages.map((project, index) => {
                             return (
-                              <Col className="item-center" style={{ marginRight: "10px", marginBottom: "20px" }}>
+                              <Col className="item-center" style={{ marginBottom: "20px" }}>
                               <ProjectCard
                                 key={index}
                                 {...project}

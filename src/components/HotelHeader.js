@@ -27,7 +27,7 @@ const HotelHeader = () => {
     <div className="header-container">
       <div className="header-image">
         <img src={currentImage} alt="Cat Hotel" className="image-opacity" />
-        <div className="overlay" />
+        <div className="overlay-cat-hotel"></div>
         <div className="text-container">
           <h1 className="cat-hotel-title">CAT HOTEL</h1>
           <p className="kitty-corner">KITTY CORNER</p>

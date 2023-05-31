@@ -129,14 +129,29 @@ const CatShop = () => {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [numCardsPerRow, setNumCardsPerRow] = useState(3);
+  const [filter, setFilter] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleFilter = (category) => {
+    setFilter(category);
     if (category === "all") {
       setFilteredProducts(products);
     } else {
-      const filtered = products.filter((product) => product.category.toLowerCase() === category.toLowerCase());
+      const filtered = products.filter(
+        (product) => product.category.toLowerCase() === category.toLowerCase()
+      );
       setFilteredProducts(filtered);
     }
+  };
+
+  const handleSearch = (event) => {
+    const value = event.target.value;
+    setSearchTerm(value);
+
+    const filtered = products.filter((product) =>
+      product.title.toLowerCase().includes(value.toLowerCase())
+    );
+    setFilteredProducts(filtered);
   };
 
   useEffect(() => {
@@ -149,20 +164,19 @@ const CatShop = () => {
       }
     };
 
-    handleResize(); // Call on initial render
+    handleResize();
 
-    window.addEventListener('resize', handleResize); // Add event listener for window resize
+    window.addEventListener("resize", handleResize); // Add event listener for window resize
 
     return () => {
-      window.removeEventListener('resize', handleResize); // Cleanup event listener on component unmount
+      window.removeEventListener("resize", handleResize); // Cleanup event listener on component unmount
     };
   }, []);
 
   const addToCart = (product) => {
-    // Add cart functionality
     console.log("Added to cart:", product);
   };
-
+  
   return (
     <div className="catshop">
       <div
@@ -180,8 +194,12 @@ const CatShop = () => {
         </div>
       </div>
       <h2 className="text-white text-center">The Products</h2>
-      <Filter handleFilter={handleFilter} />
-      <ProductList products={filteredProducts} addToCart={addToCart} numCardsPerRow={numCardsPerRow} />
+      <Filter handleFilter={handleFilter} handleSearch={handleSearch} />
+      <ProductList
+        products={filteredProducts}
+        addToCart={addToCart}
+        numCardsPerRow={numCardsPerRow}
+      />
     </div>
   );
 };
