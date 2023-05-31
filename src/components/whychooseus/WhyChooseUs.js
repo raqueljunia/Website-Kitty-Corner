@@ -26,7 +26,6 @@ const WhyChooseUs = () => {
           desc="Our staff is trained and skilled in handling cats, providing expert grooming services that prioritize your cat's health and wellbeing."
         />
       </div>
-      <img src={leftCat} alt='leftcat' className='left-cat' />
       <img src={rightCat} alt='rightcat' className='right-cat' />
     </div>
   );

@@ -10,7 +10,7 @@ const Header = () => {
       <div className="overlay"></div>
       <div className="header-content">
         <h1>Welcome to</h1>
-        <h1>Kitty Corner.</h1>
+        <h1>Kitty Corner</h1>
       </div>
     </div>
   )

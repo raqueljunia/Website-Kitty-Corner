@@ -50,7 +50,7 @@ const NavbarComponent = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="d-flex">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="/services/catSalon">Cat Salon</NavDropdown.Item>
@@ -64,9 +64,6 @@ const NavbarComponent = () => {
             </NavDropdown>
             <Nav.Link href="/aboutUs">About Us</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Button className="signup" onClick={() => console.log('connect')}>Sign In</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>

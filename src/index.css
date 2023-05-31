@@ -772,6 +772,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
   margin-bottom: 20px;
 }
 
