@@ -22,7 +22,7 @@ const CatPlayground = () => {
            
             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="image">
+                    <div class="image-playground">
                         <img src={CatArena} alt=""></img>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const CatPlayground = () => {
         <div class="row clearfix">
                             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="image">
+                                    <div class="image-playground">
                                         <img src={CatGarden} alt=""></img>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ const CatPlayground = () => {
                             
                             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="image">
+                                    <div class="image-playground">
                                         <img src={CatToy} alt=""></img>
                                     </div>
                                 </div>
