@@ -769,8 +769,6 @@ video {
 }
 
 .filter {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: auto;
   margin-bottom: 20px;
@@ -781,6 +779,7 @@ video {
   font-size: 16px;
   border: none;
   border-radius: 4px;
+  margin-right: 10px
 }
 
 .filter select {
@@ -788,6 +787,7 @@ video {
   font-size: 16px;
   border: none;
   border-radius: 4px;
+  margin-left: 10px;
 }
 
 .catshop .filter {
