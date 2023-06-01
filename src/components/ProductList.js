@@ -18,18 +18,31 @@ const ProductList = ({ products, addToCart, numCardsPerRow }) => {
   return (
     <div className="product-list" style={{ display: "flex", flexWrap: "wrap" }}>
       {products.map((product) => (
-        <div className="product-card" key={product.title} style={{
+        <div
+          className="product-card"
+          key={product.title}
+          style={{
             width: `${cardWidth}%`,
             maxWidth: cardMaxWidth,
             padding: "10px",
             margin: "10px auto",
             boxSizing: "border-box",
-          }}>
-          <img src={product.imgUrl} alt={product.title} style={{ width: "100%", height: "auto" }} />
-          <h3>{product.title}</h3>
-          <p>{product.description}</p>
-          <p>Price: {product.price}</p>
-          <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <img src={product.imgUrl} alt={product.title} style={{ width: "100%", height: "auto" }} />
+            <h3>{product.title}</h3>
+            <p>{product.description}</p>
+          </div>
+          <div style={{ marginTop: "auto" }}>
+            <p style={{ marginBottom: "0" }}>Price: {product.price}</p>
+          </div>
+          <div>
+            <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+          </div>
         </div>
       ))}
     </div>

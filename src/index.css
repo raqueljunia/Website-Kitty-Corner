@@ -24,6 +24,10 @@
   background-color: rgb(0, 95, 97) !important;
 }
 
+.custom-dropdown .dropdown-menu {
+  background-color: rgb(0, 95, 97);
+}
+
 /*** Home ***/
 
 .main {
@@ -96,9 +100,9 @@ video {
   margin-bottom: 35px;
   width: 128px;
   height: 48px;
-  background-color: rgba(252, 89, 1, 100);
+  background-color: rgb(252, 89, 1);
   border-radius: 36px;
-  border: 2px solid rgba(252, 89, 1, 100);
+  border: 2px solid rgb(252, 89, 1);
 }
 
 .btn-hero-1:hover {
@@ -216,11 +220,6 @@ video {
 
 /*** Cafe Menu ***/
 
-.project {
-  margin: 0;
-  padding: 0;
-}
-
 .project h2{
   color: white;
 }
@@ -288,6 +287,7 @@ video {
   transform: translateY(40px);
   transition: all 0.7s;
 }
+
 .price .old {
   text-decoration: line-through;
   color: #b3b3b3;
@@ -329,24 +329,10 @@ video {
   opacity: 1;
 }
 
-/** open hour **/
-.bg-open-hour {
-  background-image: url("assets/img/Open-hour-kitty.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.bg-open-hour .content-hour {
-  width: 100%;
-  height: 30rem;
-
-}
-
-/*** Projects Css ***/
-
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgb(26, 26, 26);
+  background-color: rgba(132, 147, 202, 0.35);
   align-items: center;
 }
 
@@ -714,6 +700,7 @@ video {
   border-radius: 8px;
   text-align: center;
   max-width: 30%; 
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -755,17 +742,22 @@ video {
 }
 
 .product-card button {
-  background-color: #007bff;
+  background-color: rgb(207, 110, 49);
   color: #fff;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 .product-card button:hover {
-  background-color: #784cc0;
+  background-color: rgb(86, 100, 157);
 }
 
 .filter {
@@ -787,7 +779,7 @@ video {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  margin-left: 10px;
+margin-left: 10px;
 }
 
 .catshop .filter {
@@ -866,4 +858,16 @@ video {
 
 .catshop .checkout-button:hover {
   background-color: #0056b3;
+}
+
+/** open hour **/
+.bg-open-hour {
+  background-image: url("assets/img/Open-hour-kitty.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.bg-open-hour .content-hour {
+  width: 100%;
+  height: 30rem;
+
 }
