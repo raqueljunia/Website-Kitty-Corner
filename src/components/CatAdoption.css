@@ -50,72 +50,162 @@
 }
 
 .header-title {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
+  color: rgb(36, 158, 160);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
 }
 
 .header-subtitle {
-  font-size: 18px;
+  font-size: 30px;
   margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+  color: rgb(250, 171,54);
 }
 
   
-  /* AdoptionText */
+/* AdoptionText */
 
+.adoption-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: wheat;
+}
+
+.adoption-content {
+  width: 60%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.adoption-text-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-family: 'pacifico';
+  margin-left: 80px;
+}
+
+.adoption-text-description {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.adoption-image-container {
+  width: 40%;
+  text-align: right;
+}
+
+.adoption-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
   .adoption-text-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    flex-direction: column;
   }
-  
-  .adoption-content {
-    width: 60%;
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  .adoption-text-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .adoption-text-description {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
+
+  .adoption-content,
   .adoption-image-container {
-    width: 40%;
-    text-align: right;
-  }
-  
-  .adoption-image {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    margin-right: 0;
   }
+}
+
   
-  @media (max-width: 768px) {
-    .adoption-text-container {
-      flex-direction: column;
-    }
+/* AdoptionForm */
+
+.adoption-form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(132, 147, 202, 0.35);
+}
+
+.adoption-form {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.adoption-form .form-group {
+  margin-bottom: 20px;
+}
+
+.adoption-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.adoption-form input[type='text'],
+.adoption-form input[type='email'],
+.adoption-form input[type='tel'],
+.adoption-form select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-form input[type='text']:focus,
+.adoption-form input[type='email']:focus,
+.adoption-form input[type='tel']:focus,
+.adoption-form select:focus {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adoption-form button {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #e39d33;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.adoption-form button:hover {
+  background-color: #d27728;
+}
+
+.request-processed-label {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #13823c;
+  font-size: 16px;
+}
   
-    .adoption-content,
-    .adoption-image-container {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-  
-  
-  /* Ready */
+  /* AdoptionReady */
 
   .adoption-ready {
-    padding: 80px 0;
-    background-color: #f8f8f8;
+    padding: 80px;
+    background-color: rgb(36, 158, 160);
   }
   
   .section-title {
@@ -181,83 +271,6 @@
     }
   }
   
-  /* form */
 
-  .adoption-form-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
-  }
-  
-  .adoption-form {
-    width: 400px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .adoption-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333333;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .adoption-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .adoption-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555555;
-  }
-  
-  .adoption-form input[type='text'],
-  .adoption-form input[type='email'],
-  .adoption-form input[type='tel'] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    color: #333333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .adoption-form input[type='text']:focus,
-  .adoption-form input[type='email']:focus,
-  .adoption-form input[type='tel']:focus {
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .adoption-form button {
-    width: 100%;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #e39d33;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .adoption-form button:hover {
-    background-color: #d27728;
-  }
-  
-  .request-processed-label {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #24a0a0;
-    font-size: 16px;
-  }
+
   

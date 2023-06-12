@@ -10,7 +10,7 @@ const HotelPriceList = () => {
   const rooms = [
     {
       type: 'Premium Room',
-      price: 150,
+      price: 150000, // Updated price value
       features: [
         'Spacious and comfortable accommodation',
         'Personalized care for your cat',
@@ -21,7 +21,7 @@ const HotelPriceList = () => {
     },
     {
       type: 'Luxury Room',
-      price: 250,
+      price: 250000, // Updated price value
       features: [
         'Luxurious and lavish living space',
         "24/7 dedicated staff for your cat's needs",
@@ -32,7 +32,7 @@ const HotelPriceList = () => {
     },
     {
       type: 'Regular Room',
-      price: 100,
+      price: 100000, // Updated price value
       features: [
         'Comfortable and cozy accommodation',
         'Attentive care for your cat',
@@ -55,7 +55,7 @@ const HotelPriceList = () => {
                   <div className={`room-card ${isVisible ? 'animate__animated animate__fadeIn' : ''}`}>
                     <div className="room-image">
                       <img src={room.imgUrl} alt={room.type} />
-                      <div className="room-price">${room.price}</div>
+                      <div className="room-price">IDR {room.price.toLocaleString()}/Night</div> {/* Updated price display */}
                     </div>
                     <div className="room-info">
                       <h3 className="room-type">{room.type}</h3>

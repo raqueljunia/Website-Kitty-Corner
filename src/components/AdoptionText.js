@@ -6,7 +6,8 @@ const AdoptionText = () => {
   return (
     <div className="adoption-text-container">
       <div className="adoption-content">
-        <h2 className="adoption-text-title">A House is Not a Home Without a Furry Friend</h2>
+        <h2 className="adoption-text-title">"A House is Not a Home Without a Furry Friend"</h2>
+        <br></br>
         <p className="adoption-text-description">
           <strong>Welcome To Kitty Corner Adoption Center!</strong><br /><br />
           We believe a house becomes a home when filled with the love and companionship of a furry friend. 

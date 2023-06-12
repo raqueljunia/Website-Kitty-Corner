@@ -17,7 +17,8 @@ const AdoptionForm = () => {
   };
 
   const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
+    const phoneValue = e.target.value.replace(/[^0-9]/g, '');
+    setPhone(phoneValue);
   };
 
   const handleCatNameChange = (e) => {
@@ -68,19 +69,24 @@ const AdoptionForm = () => {
             id="phone"
             value={phone}
             onChange={handlePhoneChange}
+            inputMode="numeric" // Hanya menerima input angka
             required
           />
         </div>
 
         <div className="form-group">
           <label htmlFor="cat-name">Cat Name:</label>
-          <input
-            type="text"
+          <select
             id="cat-name"
             value={catName}
             onChange={handleCatNameChange}
             required
-          />
+          >
+            <option value="">Select cat</option>
+            <option value="Kitty">Kitty</option>
+            <option value="Whiskers">Whiskers</option>
+            <option value="Mittens">Mittens</option>
+          </select>
         </div>
 
         <button type="submit">Send Request</button>
