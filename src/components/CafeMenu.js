@@ -25,7 +25,7 @@ import Coffee from "../assets/img/product/Coffee.jpg";
 import JasmineTea from "../assets/img/product/JasmineTea.jpg";
 import BlackTea from "../assets/img/product/BlackTea.jpg";
 import TrackVisibility from 'react-on-screen';
-
+import CafeHeader from "../components/CafeHeader";
 
 export const CafeMenu = () => {
 
@@ -185,14 +185,14 @@ export const CafeMenu = () => {
 
   return (
     <section className="project" id="project">
+            <CafeHeader />
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Cafe Menu</h2>
-                <p>Step into Kitty Corner Cafe and indulge in a delightful culinary experience. Our charming cafe offers a delectable selection of main courses, beverages, and desserts.</p>
+               
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

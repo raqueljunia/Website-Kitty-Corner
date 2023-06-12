@@ -156,7 +156,7 @@ video {
 /* Reviews Section */
 
 .reviews-section {
-  height: 100vh;
+  /* height: 100vh; */
   background-position: center;
   background-size: cover;
   padding: 40px;
@@ -332,7 +332,7 @@ video {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgba(132, 147, 202, 0.35);
+  background-color: #008E9B;
   align-items: center;
 }
 
@@ -342,7 +342,7 @@ video {
   text-align: center;
 }
 .project p {
-  color: #6bbeb0;
+  color: #090909;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -870,4 +870,13 @@ margin-left: 10px;
   width: 100%;
   height: 30rem;
 
+}
+
+.image-playground img {
+  width: 100% !important;
+}
+
+.baner-cafe{
+  position: absolute;
+    top: 300px;
 }
