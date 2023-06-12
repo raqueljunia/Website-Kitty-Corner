@@ -880,3 +880,10 @@ margin-left: 10px;
   position: absolute;
     top: 300px;
 }
+
+@media only screen and (max-width: 600px) {
+  .baner-cafe{
+    position: absolute;
+      top: 70px;
+  }
+}
