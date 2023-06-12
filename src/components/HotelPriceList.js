@@ -52,10 +52,10 @@ const HotelPriceList = () => {
             <Col key={index} xs={12} sm={6} md={4}>
               <TrackVisibility>
                 {({ isVisible }) => (
-                  <div className={`room-card ${isVisible ? 'animate__animated animate__fadeIn' : ''}`}>
+                  <div className={`room-card IDR {isVisible ? 'animate__animated animate__fadeIn' : ''}`}>
                     <div className="room-image">
                       <img src={room.imgUrl} alt={room.type} />
-                      <div className="room-price">${room.price}</div>
+                      <div className="room-price">IDR {room.price}</div>
                     </div>
                     <div className="room-info">
                       <h3 className="room-type">{room.type}</h3>

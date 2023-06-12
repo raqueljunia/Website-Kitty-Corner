@@ -33,18 +33,18 @@
 }
 
 .cat-hotel-title {
-  font-size: 60px;
+  font-size: 85px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  color: rgb(247, 129, 4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+  color: rgb(36, 158, 160);
 }
 
 .kitty-corner {
-  font-size: 30px; 
+  font-size: 40px; 
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+  color: rgb(250, 171,54);
 }
 
 @media (max-width: 768px) {
@@ -76,7 +76,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #d27728;
   animation: lineAnimation 1s ease-in-out forwards; /* Tambahkan animasi garis muncul */
 }
 
@@ -132,7 +132,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: rgb(36, 158, 160);
+  background-color: rgba(132, 147, 202, 0.35);
 }
 
 .hotel-booking-form form {
@@ -268,7 +268,7 @@
 
 .hotel-price-list {
   padding: 50px 0;
-  background-color: rgba(132, 147, 202, 0.35);
+  background-color: rgb(36, 158, 160);
 }
 
 .room-card {

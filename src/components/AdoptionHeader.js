@@ -26,8 +26,8 @@ const AdoptionHeader = () => {
       ))}
       <div className="header-overlay" />
       <div className="header-text-container">
-        <h1 className="header-title">Cat Adoption</h1>
-        <p className="header-subtitle">Find Your Perfect Feline Companion</p>
+        <h1 className="header-title">CAT ADOPTION</h1>
+        <p className="header-subtitle">KITTY CORNER</p>
       </div>
     </header>
   );
