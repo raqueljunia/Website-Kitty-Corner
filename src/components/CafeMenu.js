@@ -191,7 +191,7 @@ export const CafeMenu = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated animate__fadeIn": ""} class="p-5">
                
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
