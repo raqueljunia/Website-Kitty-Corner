@@ -30,7 +30,8 @@ const CatHotel = () => {
   };
 
   const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
+    const phoneNumber = e.target.value.replace(/\D/, ''); // Remove non-numeric characters
+    setPhoneNumber(phoneNumber);
   };
 
   const handleNumberOfCatsChange = (e) => {
@@ -155,6 +156,7 @@ const CatHotel = () => {
                 id="phone-number"
                 value={phoneNumber}
                 onChange={handlePhoneNumberChange}
+                pattern="[0-9]*" // Allow only numeric characters
                 required
               />
             </div>
