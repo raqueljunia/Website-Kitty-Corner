@@ -76,8 +76,6 @@
 }
 
   
-/* AdoptionText */
-
 .adoption-text-container {
   display: flex;
   align-items: center;
@@ -110,6 +108,9 @@
 .adoption-image-container {
   width: 40%;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .adoption-image {
@@ -121,14 +122,22 @@
 @media (max-width: 768px) {
   .adoption-text-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .adoption-content,
   .adoption-image-container {
     width: 100%;
     margin-right: 0;
+    text-align: center;
+  }
+
+  .adoption-text-title,
+  .adoption-text-description {
+    margin-left: 0;
   }
 }
+
 
   
 /* AdoptionForm */
