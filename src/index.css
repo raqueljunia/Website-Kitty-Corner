@@ -777,6 +777,7 @@ video {
 }
 
 .header-shop h1 {
+  font-size: 70px;
   font-family: 'Montserrat';
   font-weight: 600;
 }
@@ -784,6 +785,15 @@ video {
 .header-shop h3 {
   font-family: 'Montserrat';
   font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .header-shop h3 {
+    font-size: 23px;
+  }
+  .header-shop h1 {
+    font-size: 47px;
+  }
 }
 
 .catshop {
@@ -802,7 +812,6 @@ video {
 }
 
 .catshop h1 {
-  font-size: 70px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -850,13 +859,11 @@ video {
 
 @media (max-width: 576px) {
   .product-list {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
-  .product-card {
-    font-size: 11px;
-  }
+
   .product-card img {
     width: 100%;
   }
@@ -871,7 +878,7 @@ video {
 
 .product-card h3 {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .product-card p {
@@ -941,62 +948,6 @@ margin-left: 10px;
   background-color: #d9d9d9;
 }
 
-.catshop .cart {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.catshop .cart h2 {
-  margin-top: 0;
-}
-
-.catshop .cart-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.catshop .cart-item img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.catshop .cart-item-info {
-  flex-grow: 1;
-}
-
-.catshop .cart-item-title {
-  font-weight: bold;
-}
-
-.catshop .cart-item-price {
-  font-size: 14px;
-}
-
-.catshop .cart-item-quantity {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.catshop .checkout-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-}
-
-.catshop .checkout-button:hover {
-  background-color: #0056b3;
-}
 
 /** open hour **/
 .bg-open-hour {

@@ -4,6 +4,10 @@ import bgHero from "../assets/img/bgHero.png";
 import headerImg from "../assets/img/whiteCat.png";
 
 const HeroMain = () => {
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  };
+
   return (
     <div
       style={{
@@ -25,8 +29,12 @@ const HeroMain = () => {
                 <h1 className="header-hero" style={{ color: 'rgb(0,128,131)' }}>Place For Your</h1>
                 <h1 className="header-hero" style={{ color: 'rgb(247,129,5)' }}>Feline Friend</h1>
                 <div className="d-flex gap-4" style={{ marginTop: '50px' }}>
-                  <Button className="btn-hero-1 text-center align-item-center justify-content-center" variant="primary">
-                    <a href="/aboutUs" className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
+                  <Button
+                    className="btn-hero-1 text-center align-item-center justify-content-center"
+                    variant="primary"
+                    onClick={scrollToBottom}
+                  >
+                    <a className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
                       Contact
                     </a>
                   </Button>

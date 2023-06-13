@@ -7,8 +7,9 @@
   }
   
   .whychooseus-header {
-    width: 100%;
-    font-size: 40px;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 35px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;

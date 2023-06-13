@@ -10,7 +10,7 @@
 .book-title {
   position: relative;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.4);
@@ -39,6 +39,7 @@
 
 @media only screen and (max-width: 600px) {
   .book-title {
-    font-size: 1.5rem;
+    font-size: 45px;
+    margin-bottom: -100px;
   }
 }
