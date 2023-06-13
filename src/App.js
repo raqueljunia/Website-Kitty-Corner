@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavbarComponent from './components/NavbarComponent';
-import FooterComponent from './components/FooterComponent';
 import Home from './pages/Home';
 import CatSalon from './pages/CatSalon';
 import CatHotel from './pages/CatHotel';
@@ -28,7 +27,6 @@ function App() {
         <Route path="/bookonline" element={<BookPage />}/>
         <Route path="/catSalon" element={<CatSalon />}/>
       </Routes>
-      <FooterComponent />
       </div>
   );
 }

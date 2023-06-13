@@ -5,6 +5,7 @@ import ServicesSection from "../components/ServicesSection";
 import FacilitiesSection from "../components/FacilitiesSection";
 import ReviewsSection from "../components/ReviewsSection";
 import GMap from "../components/GMap";
+import FooterComponent from '../components/FooterComponent';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     <FacilitiesSection />
     <ReviewsSection />
     <GMap />
+    <FooterComponent />
   </div>
   );
 };

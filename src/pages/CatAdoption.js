@@ -3,6 +3,7 @@ import AdoptionHeader from '../components/AdoptionHeader';
 import AdoptionText from '../components/AdoptionText';
 import AdoptionReady from '../components/AdoptionReady';
 import AdoptionForm from '../components/AdoptionForm';
+import FooterComponent from '../components/FooterComponent';
 
 const CatAdoption = () => {
   return (
@@ -11,6 +12,7 @@ const CatAdoption = () => {
       <AdoptionText />
       <AdoptionReady />
       <AdoptionForm />
+      <FooterComponent />
     </div>
   );
 }

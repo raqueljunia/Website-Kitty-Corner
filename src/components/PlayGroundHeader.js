@@ -1,5 +1,4 @@
 import React from 'react';
-import './CatPlayground.css';
 
 const PlayGroundHeader = () => {
   return (

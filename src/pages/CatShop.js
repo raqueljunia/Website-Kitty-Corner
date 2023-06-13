@@ -17,10 +17,12 @@ import CatHarness from "../assets/img/CatHarness.jpg";
 import CatShoes from "../assets/img/CatShoes.png";
 import CatNipToy from "../assets/img/catnipToy.jpg";
 import CatWheel from "../assets/img/catWheel.png";
+import FooterComponent from '../components/FooterComponent';
 
 const CatShop = () => {
   const [products] = useState([
     {
+      id :"1",
       imgUrl: Purina,
       category: "cat food",
       title: "Purina Pro Plan",
@@ -28,6 +30,7 @@ const CatShop = () => {
       price: "10.00",
     },
     {
+      id :"2",
       imgUrl: Whiskas,
       category: "cat food",
       title: "Whiskas Adult (Ocean Fish Flavour)",
@@ -35,6 +38,7 @@ const CatShop = () => {
       price: "10.00",
     },
     {
+      id :"3",
       imgUrl: MeowMix,
       category: "cat food",
       title: "Meow Mix Original Choice",
@@ -42,6 +46,7 @@ const CatShop = () => {
       price: "28.00",
     },
     {
+      id :"4",
       imgUrl: catBackpack,
       category: "cat accessories",
       title: "Cat Backpack Carrier",
@@ -49,6 +54,7 @@ const CatShop = () => {
       price: "30.00",
     },
     {
+      id :"5",
       imgUrl: PurinaFriskies,
       category: "cat food",
       title: "Friskies Adult Indoor Delights",
@@ -56,6 +62,7 @@ const CatShop = () => {
       price: "8.00",
     },
     {
+      id :"6",
       imgUrl: catCollar,
       category: "cat accessories",
       title: "Japanese Style Cat Collar with Bells",
@@ -63,6 +70,7 @@ const CatShop = () => {
       price: "9.19",
     },
     {
+      id :"7",
       imgUrl: featherToy,
       category: "cat toy",
       title: "Interactive Feather Toys",
@@ -70,6 +78,7 @@ const CatShop = () => {
       price: "1.05",
     },
     {
+      id :"8",
       imgUrl: FunkyFeast,
       category: "cat food",
       title: "Funky Feast Chunky Cat Food",
@@ -77,6 +86,7 @@ const CatShop = () => {
       price: "1.65",
     },
     {
+      id :"9",
       imgUrl: RoyalCanineAppetite,
       category: "cat food",
       title: "Royal Canin Appetite Control Care",
@@ -84,6 +94,7 @@ const CatShop = () => {
       price: "34.99",
     },
     {
+      id :"10",
       imgUrl: CatShoes,
       category: "cat accessories",
       title: "Cat Shoes Anti-Scratch Paw Protector",
@@ -91,6 +102,7 @@ const CatShop = () => {
       price: "9.00",
     },
     {
+      id :"11",
       imgUrl: PurinaOne,
       category: "cat food",
       title: "Purina ONE Adult",
@@ -98,6 +110,7 @@ const CatShop = () => {
       price: "10.00",
     },
     {
+      id :"12",
       imgUrl: WhiskasSmall,
       category: "cat food",
       title: "Whiskas Kitten Small",
@@ -105,6 +118,7 @@ const CatShop = () => {
       price: "3.07",
     },
     {
+      id :"13",
       imgUrl: CatHarness,
       category: "cat accessories",
       title: "Cat Harness",
@@ -112,6 +126,7 @@ const CatShop = () => {
       price: "9.00",
     },
     {
+      id :"14",
       imgUrl: CatNipToy,
       category: "cat toy",
       title: "Catnip Toy",
@@ -119,6 +134,7 @@ const CatShop = () => {
       price: "7.04",
     },
     {
+      id :"15",
       imgUrl: CatWheel,
       category: "cat toy",
       title: "Cat Exercise Wheel",
@@ -127,10 +143,11 @@ const CatShop = () => {
     },
   ]);
 
+
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [numCardsPerRow, setNumCardsPerRow] = useState(3);
-  const [filter, setFilter] = useState("all");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [setFilter] = useState("all");
+  const [setSearchTerm] = useState("");
 
   const handleFilter = (category) => {
     setFilter(category);
@@ -174,10 +191,10 @@ const CatShop = () => {
   }, []);
 
   const addToCart = (product) => {
-    console.log("Added to cart:", product);
   };
-  
+
   return (
+    <div>
     <div className="catshop">
       <div
         style={{
@@ -200,6 +217,8 @@ const CatShop = () => {
         addToCart={addToCart}
         numCardsPerRow={numCardsPerRow}
       />
+      </div>
+      <FooterComponent />
     </div>
   );
 };

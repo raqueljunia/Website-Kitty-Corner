@@ -2,7 +2,6 @@ import React from 'react';
 import CatArena from '../assets/img/cat-arena.jpeg';
 import CatGarden from '../assets/img/cat-garden.jpg';
 import CatToy from '../assets/img/cat-toy.jpg';
-import './CatPlayground.css';
 
 const CatPlayground = () => {
   return (

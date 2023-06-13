@@ -27,27 +27,52 @@
       margin-top: 10px;
     }
 }
+
+@media (max-width: 550px) {
+  .services-section img {
+    padding: 0px 70px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 85px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 670px) {
+  .services-section img {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 70px;
+  }
+
+  .services-section .carousel-caption button {
+    margin-top: 20px;
+    margin-bottom: 3%;
+  }
+}
   
-@media (min-width: 500x) and (max-width: 900px) {
+@media (min-width: 670px) and (max-width: 900px) {
     .services-section img {
-      padding-left: 150px;
-      padding-right: 150px;
+      max-height: 550px;
+      padding-left: 170px;
+      padding-right: 170px;
       background-color: rgb(35, 158, 160);
       padding-bottom: 60px;
     }
 }
 
-@media (min-width: 900x) and (max-width: 1100px) {
+@media (min-width: 900px) and (max-width: 1100px) {
     .services-section img {
       padding-left: 270px;
       padding-right: 270px;
       background-color: rgb(35, 158, 160);
-      padding-bottom: 60px;
-}
+      padding-bottom: 75px;
+    }
   
-.services-section .carousel-caption button {
-      margin-top: 20px;
-      margin-bottom: 3%;
+    .services-section .carousel-caption button {
+          margin-top: 20px;
+          margin-bottom: 3%;
+          height: 40px;
     }
 }
   
@@ -56,14 +81,14 @@
       margin-top: 20px;
       padding-bottom: 80px;
       padding-left: 350px;
-      padding-right: 380px;
+      padding-right: 350px;
       background-color: rgb(35, 158, 160);
 }
   
-.services-section .carousel-caption button {
-      margin-top: 20px;
-      margin-bottom: 3%;
-    }
+    .services-section .carousel-caption button {
+          margin-top: 20px;
+          margin-bottom: 3%;
+        }
 }
 
 .services-section .carousel-control-prev-icon,
@@ -73,4 +98,3 @@
   height: 40px;
   border-radius: 50%;
 }
-  

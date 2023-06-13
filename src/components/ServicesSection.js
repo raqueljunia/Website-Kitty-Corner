@@ -6,6 +6,7 @@ import services2 from '../assets/img/services2.jpg';
 import services3 from '../assets/img/services3.jpg';
 import services4 from '../assets/img/services4.jpg';
 import './ServicesSection.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ServicesSection = () => {
   const [index, setIndex] = useState(0);
@@ -20,7 +21,7 @@ const ServicesSection = () => {
       <Carousel classname="carousel-services" activeIndex={index} onSelect={handleSelect} interval={null}>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 img-fluid"
             src={services1}
             alt="First slide"
           />
@@ -34,7 +35,7 @@ const ServicesSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 img-fluid"
             src={services2}
             alt="Second slide"
           />
@@ -49,7 +50,7 @@ const ServicesSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 img-fluid"
             src={services3}
             alt="Third slide"
           />
@@ -64,7 +65,7 @@ const ServicesSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 img-fluid"
             src={services4}
             alt="Fourth slide"
           />
