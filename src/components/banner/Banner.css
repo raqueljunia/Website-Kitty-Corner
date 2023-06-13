@@ -1,71 +1,57 @@
-.banner{
+.banner {
     width: 100%;
     height: 698px;
     left: calc(50% - 1440px/2 - 2px);
     top: 143px;
-    background: #D9D9D9;   
+    background: #D9D9D9;
 }
 
-.kitties-img{
-position: absolute;
-width: 1000px;
-height: 634px;
-left: 13%;
-top: 25%;
-
-background: url('../../assets/img/5cats.png');
-
-filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.4));
-transform: rotate(0.3deg);
+.kitties-img {
+    position: absolute;
+    width: 1000px;
+    height: 634px;
+    left: 13%;
+    top: 25%;
+    background: url('../../assets/img/5cats.png');
+    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.4));
+    transform: rotate(0.3deg);
 }
 
-.banner-title{
-position: absolute;
-width: 673px;
-height: 150px;
-left: calc(50% - 673px/2 + 0.15px);
-top: 30%;
-font-style: normal;
-font-weight: 800;
-font-size: 3.5rem;
-line-height: 100%;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: capitalize;
-
-color: #8493CA;
-
-text-shadow: 0px 4px 4px #FFBB55;
+.banner-title {
+    position: absolute;
+    width: 673px;
+    height: 150px;
+    left: calc(50% - 673px/2 + 0.15px);
+    top: 30%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #8493CA;
+    text-shadow: 0px 4px 4px #FFBB55;
 }
 
 @media only screen and (max-width: 600px) {
     .banner {
         width: 100vw;
         height: 300px;
+        left: 0;
+        top: 80px;
     }
-    
+
     .kitties-img {
-        position: absolute;
         width: 80%;
         height: auto;
-        top: 20%;
+        top: 15%;
         left: 10%;
     }
-    
+
     .banner-title {
         font-size: 1.5rem;
         padding-top: 32%;
-    }
-    
-    .banner {
-        top: 80px;
-    }
-    
-    .kitties-img {
-        top: 15%;
-    }
-    
-    .banner-title {
         top: 10%;
     }
 }
