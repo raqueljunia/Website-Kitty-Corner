@@ -30,17 +30,17 @@ const FooterComponent = () => {
           <div className="col-md-3">
             <h6 style={{ color: 'rgb(255,187,85)' }}>SERVICES</h6>
             <ul className="list-unstyled">
-              <li><Link to="/services/catSalon" style={{ color: 'white' }}>Cat Salon</Link></li>
-              <li><Link to="/services/catHotel" style={{ color: 'white' }}>Cat Hotel</Link></li>
-              <li><Link to="/services/catShop" style={{ color: 'white' }}>Cat Shop</Link></li>
-              <li><Link to="/services/catAdoption" style={{ color: 'white' }}>Cat Adoption</Link></li>
+              <li><Link to="/services/catSalon" style={{ textDecoration: 'none', color: 'white' }}>Cat Salon</Link></li>
+              <li><Link to="/services/catHotel" style={{ textDecoration: 'none', color: 'white' }}>Cat Hotel</Link></li>
+              <li><Link to="/services/catShop" style={{ textDecoration: 'none', color: 'white' }}>Cat Shop</Link></li>
+              <li><Link to="/services/catAdoption" style={{ textDecoration: 'none', color: 'white' }}>Cat Adoption</Link></li>
             </ul>
           </div>
           <div className="col-md-3">
             <h6 style={{ color: 'rgb(255,187,85)' }}>FACILITIES</h6>
             <ul className="list-unstyled">
-              <li><Link to="/facilities/cafe" style={{ color: 'white' }}>Cafe</Link></li>
-              <li><Link to="/facilities/catPlayground" style={{ color: 'white' }}>Cat Playground</Link></li>
+              <li><Link to="/facilities/cafe" style={{ textDecoration: 'none', color: 'white' }}>Cafe</Link></li>
+              <li><Link to="/facilities/catPlayground" style={{ textDecoration: 'none', color: 'white' }}>Cat Playground</Link></li>
             </ul>
           </div>
           <div className="col-md-3">

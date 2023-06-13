@@ -1,46 +1,111 @@
 .services-section {
-    background-position: center;
-    background-color: rgb(35, 158, 160);
-    padding-top: 10px;
+  background-position: center;
+  background-color: rgb(35, 158, 160);
+  padding-top: 10px;
 }
 
 .services-section h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+}
+
+.services-section a {
+  background-position: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
   
 .services-section Button {
-    background-color: rgb(247, 129, 5);
+  background-color: rgb(215, 111, 0);
+  border-radius: 100px;
+  height: 44px;
+  border: 2.3px solid rgb(142, 74, 0);
+}
+
+.services-section Button:hover {
+  border: 2.3px solid rgb(1, 45, 45);
+  background-color: rgba(0, 95, 97, 1);
+  border-radius: 100px;
+  height: 44px;
+}
+
+.services-section .carousel-control-prev-icon {
+  background-color: #60606069;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.services-section .carousel-control-next-icon {
+  background-color: #60606069;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
   
 @media (max-width: 500px) {
-    .services-section .carousel-caption {
-      bottom: 0;
-      left: 0;
-      right: 0;
-      text-align: center;
-      margin-bottom: 10%;
-      padding-bottom: 20px;
-}
+  .services-section .carousel-caption {
+    padding: 0px 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-bottom: 20px;
+  }
   
-.services-section .carousel-caption button {
-      margin-top: 10px;
-    }
+  .services-section .carousel-caption button {
+    margin-top: 10px;
+  }
+
+  .services-section .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .services-section .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
 
 @media (max-width: 550px) {
   .services-section img {
-    padding: 0px 70px;
+    padding-top: 10px;
+    padding: 0px 50px;
     background-color: rgb(35, 158, 160);
     padding-bottom: 85px;
     padding-top: 10px;
+  }
+
+  .services-section .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .services-section .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 }
 
 @media (min-width: 550px) and (max-width: 670px) {
   .services-section img {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
     background-color: rgb(35, 158, 160);
     padding-bottom: 70px;
   }
@@ -51,50 +116,69 @@
   }
 }
   
-@media (min-width: 670px) and (max-width: 900px) {
-    .services-section img {
-      max-height: 550px;
-      padding-left: 170px;
-      padding-right: 170px;
-      background-color: rgb(35, 158, 160);
-      padding-bottom: 60px;
-    }
+@media (min-width: 670px) and (max-width: 790px) {
+  .services-section img {
+    padding-top: 10px;
+    max-height: 550px;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 60px;
+  }
 }
 
-@media (min-width: 900px) and (max-width: 1100px) {
-    .services-section img {
-      padding-left: 270px;
-      padding-right: 270px;
-      background-color: rgb(35, 158, 160);
-      padding-bottom: 75px;
-    }
-  
-    .services-section .carousel-caption button {
-          margin-top: 20px;
-          margin-bottom: 3%;
-          height: 40px;
-    }
+@media (min-width: 790px) and (max-width: 900px) {
+  .services-section img {
+    padding-top: 10px;
+    max-height: 550px;
+    padding-left: 250px;
+    padding-right: 250px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 60px;
+  }
 }
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .services-section img {
+    padding-left: 270px;
+    padding-right: 270px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 75px;
+  }
   
-@media (min-width: 1100px) {
-    .services-section img {
+  .services-section .carousel-caption button {
+    margin-top: 20px;
+    margin-bottom: 3%;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1120px) {
+  .services-section img {
+    padding-left: 340px;
+    padding-right: 340px;
+    background-color: rgb(35, 158, 160);
+    padding-bottom: 75px;
+  }
+
+  .services-section .carousel-caption button {
       margin-top: 20px;
-      padding-bottom: 80px;
-      padding-left: 350px;
-      padding-right: 350px;
-      background-color: rgb(35, 158, 160);
+      margin-bottom: 3%;
+      height: 40px;
+  }
 }
   
-    .services-section .carousel-caption button {
-          margin-top: 20px;
-          margin-bottom: 3%;
-        }
-}
-
-.services-section .carousel-control-prev-icon,
-.services-section .carousel-control-next-icon {
-  background-color: #60606069;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+@media (min-width: 1120px) {
+ .services-section img {
+    margin-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 440px;
+    padding-right: 440px;
+    background-color: rgb(35, 158, 160);
+  }
+  
+  .services-section .carousel-caption button {
+    margin-top: 20px;
+    margin-bottom: 3%;
+  }
 }
