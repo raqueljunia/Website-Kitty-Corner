@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 100vh;
   overflow: hidden;
 }
+
 
 .header-image {
   width: 100%;
@@ -23,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(250, 171, 54, 0.6);
   animation: underline 1s ease forwards;
 }
 
@@ -50,17 +51,28 @@
 }
 
 .header-title {
-  font-size: 50px;
+  font-size: 85px;
   font-weight: bold;
-  color: rgb(36, 158, 160);
+  margin-top: 100px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+  color: rgb(36, 158, 160);
 }
 
 .header-subtitle {
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 40px; 
+  font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
   color: rgb(250, 171,54);
+}
+
+.header-subtitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #d27728;
+  animation: lineAnimation 1s ease-in-out forwards;
 }
 
   

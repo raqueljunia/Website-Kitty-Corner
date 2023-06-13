@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(252, 193, 197, 0.2)
+  background-color: rgba(250, 171, 54, 0.4);
 }
 
 .text-container {
@@ -77,7 +77,7 @@
   width: 100%;
   height: 3px;
   background-color: #d27728;
-  animation: lineAnimation 1s ease-in-out forwards; /* Tambahkan animasi garis muncul */
+  animation: lineAnimation 1s ease-in-out forwards;
 }
 
 
