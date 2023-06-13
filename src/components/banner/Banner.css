@@ -38,20 +38,29 @@
     .banner {
         width: 100vw;
         height: 300px;
-        left: 0;
-        top: 80px;
     }
 
     .kitties-img {
+        position: absolute;
         width: 80%;
         height: auto;
-        top: 15%;
+        top: 20%;
         left: 10%;
     }
 
     .banner-title {
         font-size: 1.5rem;
         padding-top: 32%;
+    }
+    .banner {
+        top: 80px;
+    }
+    
+    .kitties-img {
+        top: 15%;
+    }
+    
+    .banner-title {
         top: 10%;
     }
 }

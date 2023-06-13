@@ -21,8 +21,9 @@
     margin-top: 50px;
   }
   
-  .cardcontainer .card-salon {
-    width: 100%;
+  .cardcontainer .card-salon-component{
+    flex: 0 0 calc(50%-1%);
+    margin-bottom: 2%;
   }
   
   .left-cat {

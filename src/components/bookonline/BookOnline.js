@@ -29,7 +29,7 @@ const BookOnline = () => {
 
       <Form.Group className="mb-3" controlId="formGridPhone">
         <Form.Label>Phone</Form.Label>
-        <Form.Control type="tel" placeholder="0123456789" />
+        <Form.Control type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></Form.Control>
       </Form.Group>
 
       <Row className="mb-3">
