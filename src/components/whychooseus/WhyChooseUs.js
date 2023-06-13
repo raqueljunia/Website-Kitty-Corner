@@ -1,7 +1,6 @@
 import React from 'react';
 import './WhyChooseUs.css';
 import CardSalon from '../../components/card-salon/CardSalon';
-import leftCat from '../../assets/img/catBath.png';
 import rightCat from '../../assets/img/grayCatSit.png';
 
 const WhyChooseUs = () => {

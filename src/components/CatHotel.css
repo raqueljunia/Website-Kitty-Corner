@@ -34,10 +34,16 @@
 
 .cat-hotel-title {
   font-size: 85px;
+<<<<<<< HEAD
   font-weight: bold;
   margin-bottom: -5px;
+=======
+  margin-bottom: 20px;
+>>>>>>> a577a1d1b2e787c12605187b3f732bafdecba15e
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
-  color: rgb(36, 158, 160);
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat';
+  font-weight: 600;
 }
 
 .kitty-corner {

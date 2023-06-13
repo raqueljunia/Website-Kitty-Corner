@@ -146,8 +146,8 @@ const CatShop = () => {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [numCardsPerRow, setNumCardsPerRow] = useState(3);
-  const [setFilter] = useState("all");
-  const [setSearchTerm] = useState("");
+  const [filter, setFilter] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleFilter = (category) => {
     setFilter(category);
@@ -183,10 +183,10 @@ const CatShop = () => {
 
     handleResize();
 
-    window.addEventListener("resize", handleResize); // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Cleanup event listener on component unmount
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -210,7 +210,7 @@ const CatShop = () => {
           <p className="text-white">Kitty Corner's Cat Shop is an online store dedicated to providing a wide range of high-quality products for cats. We understand the unique needs and preferences of cat owners and strive to offer a diverse selection of cat food, cat accessories, and cat toys.</p>
         </div>
       </div>
-      <h2 className="text-white text-center">The Products</h2>
+      <h2 className="text-white text-center" style={{ fontFamily: 'Outfit', fontWeight: '600', fontSize: '35px' }}>PRODUCTS</h2>
       <Filter handleFilter={handleFilter} handleSearch={handleSearch} />
       <ProductList
         products={filteredProducts}
