@@ -24,6 +24,7 @@
   .cardcontainer .card-salon-component{
     flex: 0 0 calc(50%-1%);
     margin-bottom: 2%;
+    align-self: center;
   }
   
   .left-cat {
@@ -49,10 +50,11 @@
     }
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 500px) {
     .cardcontainer {
-      width: 90%;
-      margin: 0 auto;
+      margin: 0px -80px;
+      margin-top: 30px;
+      text-align: center;
     }
   }
   
