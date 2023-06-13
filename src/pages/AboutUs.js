@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div className="container">
       <div className="header">
         <br /> <br /> <br />
-        <h1>Hi!</h1>
+        <h1 style={{ fontFamily: 'Montserrat', fontWeight: '600' }}>Hi!</h1>
         <h1>We're Group 1 From Class H</h1>
       </div>
       <div className="introduction">
@@ -33,7 +33,12 @@ const AboutUs = () => {
         <ul>
             <li>
               <a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color:'black' }}>
-                The Cat API
+                The Cat API (used in 'Cat Adoption')
+              </a>
+            </li>
+            <li>
+              <a href="https://cataas.com/#/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color:'black' }}>
+                Cataas (used in 'Home')
               </a>
             </li>
           </ul>

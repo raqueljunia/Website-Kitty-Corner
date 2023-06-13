@@ -12,21 +12,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaQuery } from 'react-responsive';
 
 const ReviewsSection = () => {
-  const [reviewImages, setReviewImages] = useState([]);
+  const [reviewImages, setReviewImages] = useState({});
   const isMobile = useMediaQuery({ maxWidth: 576 });
 
   useEffect(() => {
-    const fetchReviewImages = async () => {
+    const fetchReviewImages = async (id) => {
       try {
-        const response = await axios.get('https://cataas.com/api/cats?limit=12&skip=0');
-        const data = response.data;
-        setReviewImages(data.map(cat => cat.url));
+        const response = await axios.get('https://cataas.com/cat');
+        const imageUrl = response.request.responseURL;
+        setReviewImages(prevState => ({
+          ...prevState,
+          [id]: imageUrl
+        }));
       } catch (error) {
         console.log('Error fetching review images:', error);
       }
     };
 
-    fetchReviewImages();
+    const fetchImages = async () => {
+      for (let i = 0; i < reviews.length; i++) {
+        const review = reviews[i];
+        await fetchReviewImages(review.id);
+      }
+    };
+
+    fetchImages();
   }, []);
 
   const reviews = [
@@ -131,11 +141,11 @@ const ReviewsSection = () => {
           <Carousel.Item key={index}>
             <Container>
               <Row>
-                {reviewsChunk.map((review, index) => (
+                {reviewsChunk.map((review) => (
                   <Col key={review.id} size={12} sm={6} md={4}>
                     <Card className="review-card text-white">
                       <div className="profile-img">
-                        <img src={index < reviewImages.length ? reviewImages[index] : profile} alt="Profile" crossOrigin="anonymous" style={{ maxWidth: '100%' }} />
+                        <img src={reviewImages[review.id] || profile} alt="Profile" crossOrigin="anonymous" style={{ maxWidth: '100%' }} />
                       </div>
                       <Card.Body>
                         <Card.Title style={{ fontWeight: 'bold', color: 'rgba(1, 72, 74, 0.85)' }}>{review.name}</Card.Title>

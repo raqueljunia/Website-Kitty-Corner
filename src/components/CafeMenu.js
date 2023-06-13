@@ -185,7 +185,8 @@ export const CafeMenu = () => {
 
   return (
     <section className="project" id="project">
-            <CafeHeader />
+      <CafeHeader />
+      <h1 className="MenuHeader">Cafe Menu</h1>
       <Container>
         <Row>
           <Col size={12}>
@@ -196,13 +197,13 @@ export const CafeMenu = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Main Course</Nav.Link>
+                      <Nav.Link eventKey="first" style={{ fontWeight: 'bold' }}>Main Course</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Beverages</Nav.Link>
+                      <Nav.Link eventKey="second" style={{ fontWeight: 'bold' }}>Beverages</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Dessert</Nav.Link>
+                      <Nav.Link eventKey="third" style={{ fontWeight: 'bold' }}>Dessert</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>

@@ -1,66 +1,107 @@
 .banner {
-    width: 100%;
-    height: 698px;
-    left: calc(50% - 1440px/2 - 2px);
-    top: 143px;
-    background: #D9D9D9;
+  height: 100vh;
+  background: #D9D9D9;
+  position: relative;
 }
 
-.kitties-img {
-    position: absolute;
-    width: 1000px;
-    height: 634px;
-    left: 13%;
-    top: 25%;
-    background: url('../../assets/img/5cats.png');
-    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.4));
-    transform: rotate(0.3deg);
+.banner-title h3 {
+  padding-top: 90px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
+  color: #8493CA;
+  z-index: 2;
 }
 
-.banner-title {
-    position: absolute;
-    width: 673px;
-    height: 150px;
-    left: calc(50% - 673px/2 + 0.15px);
-    top: 30%;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.5rem;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-    color: #8493CA;
-    text-shadow: 0px 4px 4px #FFBB55;
+.banner-title h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #8493CA;
+  z-index: 2;
+  font-size: 70px;
 }
 
-@media only screen and (max-width: 768px) {
-    .banner {
-        width: 100vw;
-        height: 300px;
-    }
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    .kitties-img {
-        position: absolute;
-        width: 80%;
-        height: auto;
-        top: 20%;
-        left: 10%;
-    }
+.banner-img {
+  height: 150%;
+  width: auto;
+  filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.4));
+  transform: rotate(0.3deg);
+}
 
-    .banner-title {
-        font-size: 1.5rem;
-        padding-top: 32%;
-    }
-    .banner {
-        top: 80px;
-    }
-    
-    .kitties-img {
-        top: 15%;
-    }
-    
-    .banner-title {
-        top: 10%;
-    }
+@media (max-width: 768px) {
+  .banner-img {
+    height: 500px;
+  }
+
+  .banner-title h3 {
+    padding-top: 80px;
+  }
+
+  .banner-title h1 {
+    font-size: 65px;
+  }
+
+  .banner {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-img {
+    height: 400px;
+  }
+
+  .banner-title h3 {
+    padding-top: 70px;
+  }
+
+  .banner-title h1 {
+    font-size: 55px;
+  }
+
+  .banner {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-img {
+    height: 300px;
+  }
+
+  .banner-title h3 {
+    padding-top: 60px;
+  }
+
+  .banner-title h1 {
+    font-size: 45px;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-img {
+    height: 250px;
+  }
+
+  .banner-title h3 {
+    font-size: 1rem;
+    padding-top: 45px;
+  }
+
+  .banner-title h1 {
+    font-size: 35px;
+  }
 }

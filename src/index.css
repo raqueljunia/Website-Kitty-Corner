@@ -52,6 +52,7 @@ video {
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 }
 
 .header-content h1 {
@@ -223,8 +224,32 @@ video {
 
 /*** Cafe Menu ***/
 
+.MenuHeader {
+  text-align: center;
+  font-family: 'Outfit';
+  font-weight: bold; 
+  font-size: '35px';
+  padding-top: 60px;
+  color: white;
+}
+
 .project h2{
   color: white;
+}
+
+.cafe-header h3{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
+}
+
+.cafe-header h1{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
+  font-size: 90px;
 }
 
 .projectCard {
@@ -345,7 +370,7 @@ video {
   text-align: center;
 }
 .project p {
-  color: #090909;
+  color: rgb(248, 194, 112);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -383,7 +408,7 @@ video {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #aa4736 -5.91%, #2fbda1 111.58%);
+    background: rgba(255, 187, 85, 1);
     top: 0;
     left: 0;
     z-index: -1;
@@ -417,18 +442,7 @@ video {
   text-align: center;
   align-items: center;
 }
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -465,6 +479,17 @@ video {
 }
 
 /***Cat Playground***/
+
+.playground h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 90px;
+}
+
+.playground h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
 
 .about-section{
 	position:relative;
@@ -647,32 +672,39 @@ video {
   opacity: 0.8;
 }
 
-.playground .header-content {
+.header-playground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-playground {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-weight: '600';
+  font-size: '60px';
 }
 
-.playground .header-content h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
+.header-playground h1 {
+  letter-spacing: 0;
 }
 
-.playground .header-content h1:first-child {
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .playground .header-content {
-    font-size: 24px;
+@media (max-width: 700px) {
+  .header-playground h1{
+    font-size: '20px';
   }
 }
 
@@ -742,6 +774,16 @@ video {
 .header-shop {
   padding-top: 200px;
   padding-bottom: 150px;
+}
+
+.header-shop h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.header-shop h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
 }
 
 .catshop {
@@ -853,7 +895,7 @@ video {
 }
 
 .product-card button:hover {
-  background-color: rgb(86, 100, 157);
+  background-color: rgba(0, 95, 97, 1);
 }
 
 .filter {
