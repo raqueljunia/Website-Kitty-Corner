@@ -2,6 +2,7 @@
   height: 100vh;
   background: #D9D9D9;
   position: relative;
+  box-sizing: border-box;
 }
 
 .banner-title h3 {
@@ -93,7 +94,7 @@
 
 @media (max-width: 400px) {
   .banner-img {
-    height: 250px;
+    height: 230px;
   }
 
   .banner-title h3 {
