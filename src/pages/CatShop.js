@@ -174,8 +174,8 @@ const CatShop = () => {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
-      if (windowWidth < 768) {
-        setNumCardsPerRow(2);
+      if (windowWidth < 500) {
+        setNumCardsPerRow(1);
       } else {
         setNumCardsPerRow(3);
       }

@@ -857,10 +857,10 @@ video {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   .product-list {
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
 
