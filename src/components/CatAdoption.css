@@ -61,6 +61,15 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: -3px;
+  }
+}
+
+
 .header-subtitle {
   font-size: 40px; 
   font-weight: bold;
@@ -76,6 +85,17 @@
   background-color: #d27728;
   animation: lineAnimation 1s ease-in-out forwards;
 }
+
+@media (max-width: 768px) {
+  .header-subtitle {
+    font-size: 24px;
+  }
+
+  .header-subtitle::after {
+    height: 2px;
+  }
+}
+
 
   
 .adoption-text-container {
