@@ -9,6 +9,7 @@ const HeroMain = () => {
   };
 
   return (
+    <div className='hero-sec'>
     <div
       style={{
         backgroundImage: `url(${bgHero})`,
@@ -52,6 +53,7 @@ const HeroMain = () => {
           </Row>
         </Container>
       </section>
+    </div>
     </div>
   );
 };
