@@ -889,7 +889,6 @@ video {
 .product-card button {
   background-color: rgb(207, 110, 49);
   color: #fff;
-  border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -899,6 +898,12 @@ video {
   margin-right: auto;
   margin-top: 3px;
   margin-bottom: 5px;
+  margin-top: 9px;
+  font-weight: 600;
+}
+
+.buttonShop {
+  border: 5x solid rgb(167, 83, 23);
 }
 
 .product-card button:hover {
@@ -924,7 +929,7 @@ video {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .catshop .filter {

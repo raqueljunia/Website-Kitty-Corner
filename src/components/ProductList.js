@@ -40,7 +40,7 @@ const ProductList = ({ products, addToCart, numCardsPerRow }) => {
           <div style={{ marginTop: "auto" }}>
             <p style={{ marginBottom: "0" }}>Price: {product.price}</p>
           </div>
-          <div>
+          <div className="buttonShop">
             <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
           </div>
         </div>

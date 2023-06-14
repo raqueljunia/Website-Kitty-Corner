@@ -1,63 +1,55 @@
-.cardsalon-component{
+.cardsalon-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-    width: 265px;
-    display: flex;
-    flex-direction: column;
-    height: 362px;
-    top: 10%;
-    background: linear-gradient(180deg, #CA84AC 0%, #FAAB35 0.01%);
-    box-shadow: -3px 8px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    }
-    
-    .icon{
-    position: relative;
-    width: 92px;
-    height: 92px;
-    left: 30%;
-    top: 10%;
-    
-    }
-    
-  .cardsalon-title{
-    position: relative;
-    top: 10%;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    text-align: center;
-    color: #FFFFFF;
-    }
-    
-    .cardsalon-desc{
-    position: relative;
-    width: 221px;
-    height: 126px;
-    left: 7.5%;
-    top: 15%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    }
-    
-    @media (max-width: 480px) {
-        .cardsalon-component {
-          width: 50%;
-          max-width: 100%;
-          height: auto;
-          margin-bottom: 20px;
-        }
-      
-        .cardsalon-title {
-          font-size: 24px;
-        }
-      
-        .cardsalon-desc {
-          max-width: 100%;
-          font-size: 16px;
-        }
-      }
+  width: 265px;
+  height: 362px;
+  top: 10%;
+  background: linear-gradient(180deg, #CA84AC 0%, #FAAB35 0.01%);
+  box-shadow: -3px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.icon {
+  width: 92px;
+  height: 92px;
+  margin: 20px auto;
+}
+
+.cardsalon-title {
+  font-size: 32px;
+  margin: 10px auto;
+  font-family: 'Outfit';
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.cardsalon-desc {
+  width: 221px;
+  height: 126px;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 15px auto;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+  .cardsalon-component {
+    width: 80%; 
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px; 
+  }
+
+  .cardsalon-title {
+    font-size: 24px;
+  }
+
+  .cardsalon-desc {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}

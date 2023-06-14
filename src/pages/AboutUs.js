@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div className="container">
       <div className="header">
         <br /> <br /> <br />
-        <h1 style={{ fontFamily: 'Montserrat', fontWeight: '600' }}>Hi!</h1>
+        <h1 style={{ fontFamily: 'Montserrat', fontWeight: '600', color:'rgba(250, 171, 53, 1)' }}>Hi!</h1>
         <h1>We're Group 1 From Class H</h1>
       </div>
       <div className="introduction">
@@ -53,7 +53,7 @@ const AboutUs = () => {
       <div className="header-2">
         <br /> <br /> <br />
         <h1>Let's Meet</h1>
-        <h2>Our Members</h2>
+        <h2 style={{ color:'rgba(250, 171, 53, 1)' }}>Our Members</h2>
       </div>
       <br />
       <div className="cards">
