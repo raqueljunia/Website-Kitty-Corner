@@ -36,6 +36,7 @@
   overflow: hidden;
 }
 
+
 video {
   width: 100%;
   height: 100%;
@@ -249,19 +250,39 @@ video {
   color: white;
 }
 
-.cafe-header h3{
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: 600;
+.cafe-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+  position: relative;
 }
 
-.cafe-header h1{
+.baner-cafe {
   color: white;
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.baner-cafe h3 {
+  font-size: 24px;
   font-family: 'Montserrat';
   font-weight: 600;
-  text-align: center;
+  color: rgba(252, 89, 1, 1)
+}
+
+.baner-cafe h1 {
   font-size: 90px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: rgba(252, 89, 1, 1)
 }
 
 .projectCard {
@@ -792,11 +813,14 @@ video {
   font-size: 70px;
   font-family: 'Montserrat';
   font-weight: 600;
+  color: rgb(249, 188, 97)
 }
 
 .header-shop h3 {
   font-family: 'Montserrat';
   font-weight: 600;
+  font-size: 25px;
+  color: rgb(249, 188, 97)
 }
 
 @media (max-width: 600px) {
@@ -980,16 +1004,3 @@ video {
 .image-playground img {
   width: 100% !important;
 }
-
-.baner-cafe{
-  position: absolute;
-    top: 200px;
-}
-
-@media only screen and (max-width: 600px) {
-  .baner-cafe{
-    position: absolute;
-      top: 70px;
-  }
-}
-

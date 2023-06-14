@@ -205,9 +205,8 @@ const CatShop = () => {
         }}
       >
         <div className="header-shop text-center align-items-center">
-          <h3 className="text-white">KITTY CORNER</h3>
-          <h1 className="text-white">CAT SHOP</h1>
-          <p className="text-white">Kitty Corner's Cat Shop is an online store dedicated to providing a wide range of high-quality products for cats. We understand the unique needs and preferences of cat owners and strive to offer a diverse selection of cat food, cat accessories, and cat toys.</p>
+          <h3>KITTY CORNER</h3>
+          <h1>CAT SHOP</h1>
         </div>
       </div>
       <h2 className="text-white text-center" style={{ fontFamily: 'Outfit', fontWeight: '600', fontSize: '35px' }}>PRODUCTS</h2>
