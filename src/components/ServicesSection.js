@@ -26,7 +26,7 @@ const ServicesSection = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-          <Button className="btn-service-1 text-center align-item-center justify-content-center" variant="primary">
+          <Button className="btn-service text-center align-item-center justify-content-center" variant="primary">
             <a href="/services/catSalon" className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
                Cat Salon
             </a>
@@ -41,7 +41,7 @@ const ServicesSection = () => {
           />
 
           <Carousel.Caption>
-          <Button className="btn-service-2 text-center align-item-center justify-content-center" variant="primary">
+          <Button className="btn-service text-center align-item-center justify-content-center" variant="primary">
             <a href="/services/catHotel" className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
                Cat Hotel
             </a>
@@ -56,7 +56,7 @@ const ServicesSection = () => {
           />
 
           <Carousel.Caption>
-          <Button className="btn-service-3 text-center align-item-center justify-content-center" variant="primary">
+          <Button className="btn-service text-center align-item-center justify-content-center" variant="primary">
             <a href="/services/catShop" className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
                Cat Shop
             </a>
@@ -71,7 +71,7 @@ const ServicesSection = () => {
           />
 
           <Carousel.Caption>
-          <Button className="btn-service-4 text-center align-item-center justify-content-center" variant="primary">
+          <Button className="btn-service text-center align-item-center justify-content-center" variant="primary">
             <a href="/services/catAdoption" className="text-decoration-none" style={{ color: 'rgb(255,255,255)' }}>
                Cat Adoption
             </a>

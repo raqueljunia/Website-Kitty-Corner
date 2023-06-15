@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div className="container">
       <div className="header">
         <br /> <br /> <br />
-        <h1 style={{ fontFamily: 'Montserrat', fontWeight: '600', color:'rgba(250, 171, 53, 1)' }}>Hi!</h1>
+        <h1 style={{ fontFamily: 'Montserrat', fontWeight: '600', color:'rgba(250, 195, 100, 1)' }}>Hi!</h1>
         <h1>We're Group 1 From Class H</h1>
       </div>
       <div className="introduction">
@@ -53,20 +53,22 @@ const AboutUs = () => {
       <div className="header-2">
         <br /> <br /> <br />
         <h1>Let's Meet</h1>
-        <h2 style={{ color:'rgba(250, 171, 53, 1)' }}>Our Members</h2>
+        <h2 style={{ color:'rgba(250, 181, 53, 1)' }}>Our Members</h2>
       </div>
       <br />
       <div className="cards">
         {membersData.map((member, index) => (
           <div className="card" key={index}>
-            <img src={member.imgURL} alt={member.name} className="profile-img" />
-            <h2>{member.name}</h2>
-            <p>{member.nim}</p>
-            <p>{member.quote}</p>
+            <div className="card-content">
+              <img src={member.imgURL} alt={member.name} className="profile-img" />
+              <h2>{member.name}</h2>
+              <p style={{ color: 'rgb(247, 129, 4)', fontWeight: 'bold' }}>{member.nim}</p>
+              <p>{member.quote}</p>
+            </div>
             <hr />
             <div className="social-links">
               <a href={member.instagram} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} className="icon-1"/>
+                <FontAwesomeIcon icon={faInstagram} className="icon-1" />
               </a>
               <a href={member.github} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="icon-2" />

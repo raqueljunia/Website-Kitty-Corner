@@ -2,9 +2,7 @@ import { Col } from "react-bootstrap";
 
 export const ProjectCard = ({ title, description, imgUrl, harga }) => {
   return (
-    
-
-    <Col size={12} sm={6} md={3}>
+    <Col>
      <div class="card-product" style={{ backgroundImage: `url(${imgUrl})` }}>
         <div class="overlay">
           <div class = "items"></div>

@@ -1,6 +1,6 @@
 .banner {
   height: 100vh;
-  background: #D9D9D9;
+  background: #cacaca;
   position: relative;
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
   font-family: 'Montserrat';
   font-weight: 600;
   text-align: center;
-  color: #8493CA;
+  color: #ffffff;
   z-index: 2;
 }
 
@@ -22,6 +22,7 @@
   color: #8493CA;
   z-index: 2;
   font-size: 70px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
 }
 
 .image-container {

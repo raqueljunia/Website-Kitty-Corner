@@ -209,7 +209,7 @@ export const CafeMenu = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <p>Indulge in our delightful main course selection, crafted with love and care. Each dish is a symphony of flavors, combining fresh ingredients and culinary expertise. From savory classics to innovative creations, our main course offerings promise to take you on a memorable culinary journey.</p>
-                      <Row xs={1} sm={2} md={3} className="justify-content-center">
+                      <Row className="justify-content-center">
                         {projects.map((project, index) => (
                             <Col key={index} className="justify-content-center" style={{ marginBottom: "20px" }}>
                               <ProjectCard {...project} />
@@ -236,7 +236,7 @@ export const CafeMenu = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Each delectable treat is carefully crafted to perfection, combining the finest ingredients and culinary expertise. From rich and velvety cakes to creamy and fruity delights, our dessert menu offers a symphony of flavors.</p>
-                      <Row xs={1} sm={2} md={3} className="justify-content-center">
+                      <Row className="justify-content-center">
                           {dessert.map((project, index) => (
                             <Col key={index} className="justify-content-center" style={{ marginBottom: "20px" }}>
                               <ProjectCard {...project} />

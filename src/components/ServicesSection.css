@@ -24,14 +24,14 @@
   font-weight: bold;
 }
   
-.services-section Button {
+.services-section .btn-service {
   background-color: rgb(215, 111, 0);
   border-radius: 100px;
   height: 44px;
   border: 2.3px solid rgb(142, 74, 0);
 }
 
-.services-section Button:hover {
+.services-section .btn-service:hover {
   border: 2.3px solid rgb(1, 45, 45);
   background-color: rgba(0, 95, 97, 1);
   border-radius: 100px;
