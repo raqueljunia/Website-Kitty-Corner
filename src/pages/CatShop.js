@@ -18,6 +18,7 @@ import CatShoes from "../assets/img/CatShoes.png";
 import CatNipToy from "../assets/img/catnipToy.jpg";
 import CatWheel from "../assets/img/catWheel.png";
 import FooterComponent from '../components/FooterComponent';
+import grayCat from "../assets/img/grayCat.png";
 
 const CatShop = () => {
   const [products] = useState([
@@ -195,27 +196,32 @@ const CatShop = () => {
 
   return (
     <div>
-    <div className="catshop">
-      <div
-        style={{
-          backgroundImage: `url(${shopHeader})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          paddingBottom: 100
-        }}
-      >
-        <div className="header-shop text-center align-items-center">
-          <h3>KITTY CORNER</h3>
-          <h1>CAT SHOP</h1>
+      <div className="catshop">
+        <div className="bannerShop">
+          <div
+            style={{
+              backgroundImage: `url(${shopHeader})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              paddingBottom: 100
+            }}
+          >
+            <div className="header-shop text-center align-items-center">
+              <h3>KITTY CORNER</h3>
+              <h1>CAT SHOP</h1>
+            </div>
+            <div className="image-shop">
+              <img src={grayCat} className="grayCat" />
+            </div>
+          </div>
         </div>
-      </div>
-      <h2 className="text-white text-center" style={{ fontFamily: 'Outfit', fontWeight: '600', fontSize: '35px' }}>PRODUCTS</h2>
-      <Filter handleFilter={handleFilter} handleSearch={handleSearch} />
-      <ProductList
-        products={filteredProducts}
-        addToCart={addToCart}
-        numCardsPerRow={numCardsPerRow}
-      />
+        <h2 className="text-white text-center" style={{ fontFamily: 'Outfit', fontWeight: '600', fontSize: '35px' }}>PRODUCTS</h2>
+        <Filter handleFilter={handleFilter} handleSearch={handleSearch} />
+        <ProductList
+          products={filteredProducts}
+          addToCart={addToCart}
+          numCardsPerRow={numCardsPerRow}
+        />
       </div>
       <FooterComponent />
     </div>
