@@ -154,7 +154,7 @@ const ReviewsSection = () => {
                             <FontAwesomeIcon key={index} icon={faStar} />
                           ))}
                         </div>
-                        <Card.Text>{review.review}</Card.Text>
+                        <Card.Text className="review-text">{review.review}</Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>

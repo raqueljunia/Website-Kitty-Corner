@@ -26,7 +26,7 @@ const HeroMain = () => {
           <Row className="align-items-center justify-content-center">
             <Col>
               <div className="text-center text-md-start">
-                <h1 className="header-hero" style={{ color: 'rgb(247,129,5)' }}>The Purrfect</h1>
+                <h1 className="header-hero header-hero-1" style={{ color: 'rgb(247,129,5)' }}>The Purrfect</h1>
                 <h1 className="header-hero" style={{ color: 'rgb(0,128,131)' }}>Place For Your</h1>
                 <h1 className="header-hero" style={{ color: 'rgb(247,129,5)' }}>Feline Friend</h1>
                 <div className="d-flex gap-4" style={{ marginTop: '50px' }}>

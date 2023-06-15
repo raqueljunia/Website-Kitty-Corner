@@ -1,6 +1,8 @@
 /*** Navbar ***/
 
 * {
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Outfit', sans-serif;
 }
@@ -106,6 +108,22 @@ video {
   margin-bottom: -10px;
 }
 
+@media (max-width: 500px) {
+  .header-hero {
+    font-size: 40px;
+  }
+
+  .header-hero-1 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 365px) {
+  .header-hero {
+    font-size: 34px;
+  }
+}
+
 .btn-hero-1 {
   margin: 45px;
   margin-top: 20px;
@@ -138,7 +156,24 @@ video {
   border: 2px solid rgb(0, 0, 0);
 }
 
+@media (max-width: 750px) {
+  .btn-hero-1 {
+    margin: auto;
+    margin-right: -25px;
+  }
+
+  .btn-hero-2 {
+    margin: auto;
+  }
+}
+
 /* Facilities Section */
+
+@media (max-width: 550px) {
+  .textFacility {
+    font-size: 25px;
+  }
+}
 
 .btn-custom-1:hover {
   width: 150px;
@@ -173,6 +208,21 @@ video {
   border: 4px solid rgb(210, 119, 40);
 }
 
+@media (max-width: 550px) {
+  .btn-custom-1,
+  .btn-custom-2 {
+    width: 105px;
+    height: 40px;
+    font-size: 12.5px;
+  }
+
+  .btn-custom-1:hover,
+  .btn-custom-2:hover {
+    width: 105px;
+    height: 40px;
+    font-size: 12.5px;
+  }
+}
 
 /* Reviews Section */
 
@@ -191,7 +241,7 @@ video {
   background-color: rgba(8,114,116,0.69);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.18);
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.267);
   margin-bottom: 65px;
   height: 380px;
   overflow: auto;
@@ -233,6 +283,17 @@ video {
   margin-right: -40px;
 }
 
+@media (max-width: 550px) {
+  .review-card .stars {
+    font-size: 17px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+}
+
+
 /*** Cafe Menu ***/
 
 .MenuHeader {
@@ -254,7 +315,7 @@ video {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 98vh;
   position: relative;
 }
 
@@ -514,13 +575,24 @@ video {
 .playground h1 {
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 90px;
+  font-size: 60px;
 }
 
 .playground h3 {
   font-family: 'Montserrat';
   font-weight: 600;
 }
+
+@media (max-width: 550px) {
+  .playground-header h1 {
+    font-size: 42px;
+  }
+
+  .playground-header h3 {
+    font-size: 20px;
+  }
+}
+
 
 .about-section{
 	position:relative;
